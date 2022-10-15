@@ -111,6 +111,13 @@ dig deeper into them by using class name or some other identifier (or by using t
 
 -getElementById('#someId') is different in that you can't search deeper within it because Ids are supposed to be UNIQUE across the entire document
 
+---querySelector and querySelectorAll---
+-Can use it like getElementByClass name, or Id name, or by tag
+-In order to tell it what to look for (element vs. class vs. Id) use the CSS style selectors 
+  -querySelector('h1') <--- selects an element
+  -querySelector('.big') <--- selects the FIRST element with this class
+  -querySelector('#title') <--- selects the element with Id of 'title'
+      -remember, only one unique Id per document! 
 
 
 
