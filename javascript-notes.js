@@ -77,4 +77,10 @@ but if you call it using some other way then it may not work the way you intend 
 	-like alert()
 -When you use the “var” keyword those variables are added to the window object (globally scoped) BUT NOT LET AND CONST
 
+
+---The DOM---
+-HTML, CSS, etc. goes in...JS objects come out! 
+-Each one of these objects has different properties that we can access
+-Set up in a tree structure with the Document on top and then all the different elements as child nodes. 
+
 */
