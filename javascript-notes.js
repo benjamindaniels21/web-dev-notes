@@ -90,7 +90,15 @@ but if you call it using some other way then it may not work the way you intend 
 ---Selecting DOM elements---
 -document.getElementById('someId') will grab an element with that Id 
   -Will return that element as an object...because the element is an object! 
--
-
-
+-There are different categories of elements (paragraph elements vs. image element)
+-document.getElementsByTagName
+  -will return multiple elements if there are multiple! 
+  -it'll look like an array, but it's actually an HTML collection
+    -sort of like the arguments object...which is also not really an array. 
+    -You can do some array-ish things on this collection 
+      -You can use array indices to grab each one. 
+      For example: 
+      const inputs = document.getElementsByTagName('input') <--- collects all the elements with the input tag
+      inputs[0]  <--- this grabs the first one...if it exists
+    
 */
