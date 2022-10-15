@@ -82,5 +82,7 @@ but if you call it using some other way then it may not work the way you intend 
 -HTML, CSS, etc. goes in...JS objects come out! 
 -Each one of these objects has different properties that we can access
 -Set up in a tree structure with the Document on top and then all the different elements as child nodes. 
+-There are lots of methods we can use to interact with the objects/elements on the page. 
+
 
 */
