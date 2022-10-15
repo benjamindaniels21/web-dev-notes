@@ -46,20 +46,28 @@ object
 -If 'this' lives inside a method (i.e.) inside an object we define, then we get the object back
     For Example: 
 
-
-const person = {
+const dog = {
   first: "Bill",
   last: "Daniels",
   nickName: "Barky Barker",
   cryForFood() {
-    console.log(this);
+    console.log(`${this.nickName} says "please give me food!"`);
   },
 };
 
-person.cryForFood();
+dog.cryForFood();
 
+-The value of 'this' will change depending on how it is called!!
+-If you access the method using standard dot notation then 'this' will reference the object
+but if you call it using some other way then it may not work the way you intend it to. 
 
--If the "this"
+-Arrow functions and 'this' work differently!!!
+    -If you use an arrow function to define a method it will not reference the object that it's contained within,
+    instead it will reference the global object (the window!). This is why we don't use arrow functions to define methods
+    within an object...we lose that ability to use 'this' as a reference to the object it's inside. 
+    -HOWEVER if you're using "this" INSIDE of a method you can use the arrow function in order to jump to the parent object.
+    -Take aways: don't use arrow functions to define a method...use them INSIDE of the method (like in a setInterval, etc.)
+
 
 
 -----The Window-----
