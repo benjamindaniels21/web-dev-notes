@@ -83,6 +83,14 @@ but if you call it using some other way then it may not work the way you intend 
 -Each one of these objects has different properties that we can access
 -Set up in a tree structure with the Document on top and then all the different elements as child nodes. 
 -There are lots of methods we can use to interact with the objects/elements on the page. 
+-Document is the root of the tree. Every webpage has a document. 
+-console.dir(document) will show you the actual object 
+-There are tonnnnnns of methods to use 
+
+---Selecting DOM elements---
+-document.getElementById('someId') will grab an element with that Id 
+  -Will return that element as an object...because the element is an object! 
+-
 
 
 */
