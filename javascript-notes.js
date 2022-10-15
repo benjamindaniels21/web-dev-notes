@@ -100,5 +100,34 @@ but if you call it using some other way then it may not work the way you intend 
       For example: 
       const inputs = document.getElementsByTagName('input') <--- collects all the elements with the input tag
       inputs[0]  <--- this grabs the first one...if it exists
-    
+      -You can iterate through them 
+      -You can also spread them 
+          Example: const inputArr = [...inputs] <---this will return an array with each element
+-document.getElementsByClassName('someClassNameHere');
+  -This will return multiple as well if there are multiple! 
+  -Same stuff as the tag name can be done. 
+-If you have multiple elements with the same tag name or class name you can save them to a variable and then
+dig deeper into them by using class name or some other identifier (or by using their index in that HTML collection)
+
+-getElementById('#someId') is different in that you can't search deeper within it because Ids are supposed to be UNIQUE across the entire document
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
