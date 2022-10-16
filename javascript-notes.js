@@ -171,9 +171,47 @@ dig deeper into them by using class name or some other identifier (or by using t
   if you add a comma and another value it will set the value of the attribute to that 
   Example: 
   document.getAttribute('min', '500') <--- sets the min to 500 
+  -You can even use the second value to change the type of attribute
+      -pretty cool stuff. 
 -This is helpful when you don't have a dedicated way to tap into a particular attribute
-  
 
+---accessing parent and child elements---
+
+the .parentElement will give you the parent
+  -you can chain it together with other.parentElement to go up another level
+
+the .children will give you the children  
+
+.nextElementSibling will give you the next sibling (good for li elements)
+.previousElementSibling will give the previous sibling 
+
+---changing multiple elements---
+-We can select multiple elements at once. 
+-We then can iterate over the object 
+Example: 
+
+const allLis = document.querySelectorAll('li')
+
+for (let i = 0; i < allLis.length; i++){
+  console.log(allLis[i].innerText); <--- will get the text of each li 
+  allLis[i].innerText = 'We are the champions'; <---changes the text of each li
+}
+
+Example using for...of loop:
+
+for(let li of allLis){
+  li.innerHTML = 'WE ARE <b>THE CHAMPIONS</b>'; <---will read it as html and use the bold tag to style the text accordingly
+}
+
+
+---changing styles---
+-every element has a .style property object attached 
+  -if you console.log it it won't give you any useful info though
+  -style property will only read inline styles, but that's no bueno 
+  -You can set the styles using that property and it will add it to the html inline
+  -in JS you need to use camelCase to access the properties that are multi word
+    Example:  
+    -So background-color needs to be accessed via element.style.backgroundColor = "red" <---using camelCase for the style (backgroundColor)
 
 
 
