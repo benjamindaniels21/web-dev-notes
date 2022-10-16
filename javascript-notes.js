@@ -119,6 +119,44 @@ dig deeper into them by using class name or some other identifier (or by using t
   -querySelector('#title') <--- selects the element with Id of 'title'
       -remember, only one unique Id per document! 
 
+-You can use CSS style selectors like finding a particular element with a class name
+    Example: document.querySelector('li.home') <--- selects the li with the class "home"
+      document.querySelector('section li.home') <--- looks inside the section element for an li with the class 'home'
+
+-querySelectorAll will return all of the elements that meet that criteria       
+  -returns multiple if there are multiple...but it's in a NodeList 
+      -Another type of collection...nbd, not crazy important 
+
+---Manipulate DOM Elements---
+-You're not always actually changing the element, sometimes you're just getting data from the element
+-Getting text from an element: 
+  -start by selecting an element:
+    const h1 = document.querySelector('h1');
+    h1.innerText <--- will return the text inside the element
+  -if the selector contains multiple child elements it'll return the text from each of that element's children
+  -For example if you did a document.body.innerText it'll return ALL the text on the body. 
+-Changing the text: 
+  -you can set the text to something else like this: 
+    const h1 = document.querySelector('h1')
+    h1.innerText = "I Changed!!"
+  -It's kind of silly to do this because it won't persist if the page is reloaded if done in the console
+    -Also silly to load a page an immediately change text.
+      -But events make this very useful. Maybe we wanna change the text once something happens.
+
+---innerText vs. textContent---
+-innerText doesn't know about formatting
+-textContent does! 
+-innerText also doesn't know about hidden text! 
+  -if you added some styles that had "display: none"
+-textContent is faster, but it doesn't really matter which you use...not super important. 
+
+---innerHTML---
+-retrieve text and all tags inside as well 
+  -returns a string of all the stuff inside that particular selector 
+-this will allow you to add elements to the page, but it's gotta be in the form of a string. 
+-If you use innerText instead then it'll get messed up because it only knows that you want to add text. 
+
+
 
 
 
