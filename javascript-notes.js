@@ -271,8 +271,15 @@ A better way:
 
 -prepend() same as append but puts element at the beginning. 
 
+---removeChild() and remove()---
+-removeChild() will remove a child element from its parent
+    Example: 
+      parentEl.removeChild(childEl)
 
 
+-remove() doesn't need the parent! 
+    -remove(removedEl)
+    
 
 
 
