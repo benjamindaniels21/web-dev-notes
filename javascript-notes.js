@@ -167,8 +167,12 @@ dig deeper into them by using class name or some other identifier (or by using t
 -.href will access the url of the href 
   -You can change it by setting it to something else. 
 
-
-
+-.getAttribute('attribute') will return the value of that particular attribute if it exists
+  if you add a comma and another value it will set the value of the attribute to that 
+  Example: 
+  document.getAttribute('min', '500') <--- sets the min to 500 
+-This is helpful when you don't have a dedicated way to tap into a particular attribute
+  
 
 
 
