@@ -156,6 +156,18 @@ dig deeper into them by using class name or some other identifier (or by using t
 -this will allow you to add elements to the page, but it's gotta be in the form of a string. 
 -If you use innerText instead then it'll get messed up because it only knows that you want to add text. 
 
+---Changing and accessing attributes: src, value, href, etc. ---
+-if you use the .value will return the value of that element. 
+  -You can use this to access the value or use .value property and set it to a new value
+  Example: 
+    const input = document.querySelector('input')
+    input.value <--- will return the current value
+    input.value = "Something new" <--- this will change the value 
+
+-.href will access the url of the href 
+  -You can change it by setting it to something else. 
+
+
 
 
 
