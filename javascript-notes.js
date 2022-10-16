@@ -225,6 +225,28 @@ for(let li of allLis){
 NOTE: IN-LINE STYLES WIN OVER CLASSES. 
 
 
+---getComputedStyle---
+-this will return an object with ALLLLLLLLL the styles on an element 
+-it will display the actual style that is "winning" out 
+    -you use the properties of the object to look at what you want to see (like color, or fontSize, etc.)...USE CAMEL CASE!
+
+
+--adding a class to an element---
+-you can access an elements class by checking its attributes...using .getAttributes
+  -then add class using .setAttribute('class', 'new-class') <--takes 2 arguments (attribute, newValue)
+  -Kinda clunky! 
+    -It will erase any classes previously added in the style sheet unless you add them to the list of attributes 
+
+A better way: 
+
+---.classList---
+-Shows the classes on an element and provides methods! 
+    -add, contains, toggle, remove
+    -Makes life easier! 
+      -You can check which classes are on something, or add new classes on it! 
+-todo.classList.add('done')
+-todo.classList.toggle('done') <---will toggle between adding and removing some class! 
+
 
 
 
