@@ -260,7 +260,16 @@ A better way:
     const section = document.querySelector('section');
     section.appendChild(newH2) <---this puts it inside that section. 
 
+---append, prepend, and insertBefore---
+-You can use each of these to put an element in a specific place
+-insertBefore requires you to target the parent and then pass in the new element and then also pass in the sibling that you want it before
+    -it would look like this: 
+      parentEl.insertBefore(newEl, siblingEl)
 
+-append() allows us to insert multiple elements if we want to 
+  -puts it at the end of the targeted element. 
+
+-prepend() same as append but puts element at the beginning. 
 
 
 
