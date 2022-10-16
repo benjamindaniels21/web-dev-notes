@@ -247,6 +247,18 @@ A better way:
 -todo.classList.add('done')
 -todo.classList.toggle('done') <---will toggle between adding and removing some class! 
 
+---creating new elements---
+-const newH2-document.createElement('h2')
+    -it makes an empty element 
+      -it's actually an object! 
+    -it has no content 
+      -newH2.innerText = 'I like candy.'
+  -This doesn't put it into the DOM! 
+    -You have to put it somewhere and tell the DOM where it goes. 
+    -Let's say we have a <section></section> that we want to put it in.
+    -We can select that section and then add it in like this: 
+    const section = document.querySelector('section');
+    section.appendChild(newH2) <---this puts it inside that section. 
 
 
 
