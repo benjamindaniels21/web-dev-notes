@@ -212,6 +212,17 @@ for(let li of allLis){
   -in JS you need to use camelCase to access the properties that are multi word
     Example:  
     -So background-color needs to be accessed via element.style.backgroundColor = "red" <---using camelCase for the style (backgroundColor)
+  -This isn't the best approach if you're trying to add lots of different styles to an element and would require lots of typing
+  -Better approach:
+    const allLis = document.querySelectorAll('li') <--- select multiple elements
+    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'] <---array of the properties to add to the different elements
+
+    allLis.forEach((el, idx)=>{  <--- loop over each element in the NodeList or HTMLCollection
+      const color = colors[idx];  <--- using the index (idx) to access each element of the array
+      el.style.color = color;    <---change each li and use the array index to assign the color 
+    })     
+
+NOTE: IN-LINE STYLES WIN OVER CLASSES. 
 
 
 
