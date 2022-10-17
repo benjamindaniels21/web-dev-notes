@@ -1,8 +1,10 @@
 /*
 ----Web Dev Notes----
 
-
+*********************************
 -----Add methods to object-----
+*********************************
+
 -You can add functions to an object that you can later tap into using dot notation 
 like this: 
 
@@ -31,7 +33,10 @@ myNewObject.youPhony();
 
 Just make sure that you add a comma after the method, so you don't get an error!
 
+*********************************
 ----‘This’ Keyword----
+*********************************
+
 -It’s going to return an object 
 -It’s a keyword 
 -depending on the scope of  the returned ‘this’ object may change. 
@@ -69,16 +74,20 @@ but if you call it using some other way then it may not work the way you intend 
     -Take aways: don't use arrow functions to define a method...use them INSIDE of the method (like in a setInterval, etc.)
 
 
-
+*********************************
 -----The Window-----
+*********************************
+
 -This is the global object 
 -As you declare functions they’re added as methods to the window object. 
 -contains tons of properties
 	-like alert()
 -When you use the “var” keyword those variables are added to the window object (globally scoped) BUT NOT LET AND CONST
 
-
+*********************************
 ---The DOM---
+*********************************
+
 -HTML, CSS, etc. goes in...JS objects come out! 
 -Each one of these objects has different properties that we can access
 -Set up in a tree structure with the Document on top and then all the different elements as child nodes. 
@@ -87,7 +96,10 @@ but if you call it using some other way then it may not work the way you intend 
 -console.dir(document) will show you the actual object 
 -There are tonnnnnns of methods to use 
 
+*********************************
 ---Selecting DOM elements---
+*********************************
+
 -document.getElementById('someId') will grab an element with that Id 
   -Will return that element as an object...because the element is an object! 
 -There are different categories of elements (paragraph elements vs. image element)
@@ -111,7 +123,10 @@ dig deeper into them by using class name or some other identifier (or by using t
 
 -getElementById('#someId') is different in that you can't search deeper within it because Ids are supposed to be UNIQUE across the entire document
 
+******************************************************************
 ---querySelector and querySelectorAll---
+******************************************************************
+
 -Can use it like getElementByClass name, or Id name, or by tag
 -In order to tell it what to look for (element vs. class vs. Id) use the CSS style selectors 
   -querySelector('h1') <--- selects an element
@@ -127,7 +142,10 @@ dig deeper into them by using class name or some other identifier (or by using t
   -returns multiple if there are multiple...but it's in a NodeList 
       -Another type of collection...nbd, not crazy important 
 
+*********************************      
 ---Manipulate DOM Elements---
+*********************************
+
 -You're not always actually changing the element, sometimes you're just getting data from the element
 -Getting text from an element: 
   -start by selecting an element:
@@ -143,20 +161,29 @@ dig deeper into them by using class name or some other identifier (or by using t
     -Also silly to load a page an immediately change text.
       -But events make this very useful. Maybe we wanna change the text once something happens.
 
+*********************************      
 ---innerText vs. textContent---
+*********************************
+
 -innerText doesn't know about formatting
 -textContent does! 
 -innerText also doesn't know about hidden text! 
   -if you added some styles that had "display: none"
 -textContent is faster, but it doesn't really matter which you use...not super important. 
 
+*********************************
 ---innerHTML---
+*********************************
+
 -retrieve text and all tags inside as well 
   -returns a string of all the stuff inside that particular selector 
 -this will allow you to add elements to the page, but it's gotta be in the form of a string. 
 -If you use innerText instead then it'll get messed up because it only knows that you want to add text. 
 
+******************************************************************
 ---Changing and accessing attributes: src, value, href, etc. ---
+******************************************************************
+
 -if you use the .value will return the value of that element. 
   -You can use this to access the value or use .value property and set it to a new value
   Example: 
@@ -175,7 +202,9 @@ dig deeper into them by using class name or some other identifier (or by using t
       -pretty cool stuff. 
 -This is helpful when you don't have a dedicated way to tap into a particular attribute
 
+*********************************
 ---accessing parent and child elements---
+*********************************
 
 the .parentElement will give you the parent
   -you can chain it together with other.parentElement to go up another level
@@ -185,7 +214,10 @@ the .children will give you the children
 .nextElementSibling will give you the next sibling (good for li elements)
 .previousElementSibling will give the previous sibling 
 
+*********************************
 ---changing multiple elements---
+*********************************
+
 -We can select multiple elements at once. 
 -We then can iterate over the object 
 Example: 
@@ -203,8 +235,10 @@ for(let li of allLis){
   li.innerHTML = 'WE ARE <b>THE CHAMPIONS</b>'; <---will read it as html and use the bold tag to style the text accordingly
 }
 
-
+*********************************
 ---changing styles---
+*********************************
+
 -every element has a .style property object attached 
   -if you console.log it it won't give you any useful info though
   -style property will only read inline styles, but that's no bueno 
@@ -224,14 +258,18 @@ for(let li of allLis){
 
 NOTE: IN-LINE STYLES WIN OVER CLASSES. 
 
-
+*********************************
 ---getComputedStyle---
+*********************************
+
 -this will return an object with ALLLLLLLLL the styles on an element 
 -it will display the actual style that is "winning" out 
     -you use the properties of the object to look at what you want to see (like color, or fontSize, etc.)...USE CAMEL CASE!
 
-
+*********************************
 --adding a class to an element---
+*********************************
+
 -you can access an elements class by checking its attributes...using .getAttributes
   -then add class using .setAttribute('class', 'new-class') <--takes 2 arguments (attribute, newValue)
   -Kinda clunky! 
@@ -239,7 +277,10 @@ NOTE: IN-LINE STYLES WIN OVER CLASSES.
 
 A better way: 
 
+*********************************
 ---.classList---
+*********************************
+
 -Shows the classes on an element and provides methods! 
     -add, contains, toggle, remove
     -Makes life easier! 
@@ -247,7 +288,10 @@ A better way:
 -todo.classList.add('done')
 -todo.classList.toggle('done') <---will toggle between adding and removing some class! 
 
+*********************************
 ---creating new elements---
+*********************************
+
 -const newH2-document.createElement('h2')
     -it makes an empty element 
       -it's actually an object! 
@@ -260,7 +304,10 @@ A better way:
     const section = document.querySelector('section');
     section.appendChild(newH2) <---this puts it inside that section. 
 
+***************************************
 ---append, prepend, and insertBefore---
+***************************************
+
 -You can use each of these to put an element in a specific place
 -insertBefore requires you to target the parent and then pass in the new element and then also pass in the sibling that you want it before
     -it would look like this: 
@@ -271,7 +318,10 @@ A better way:
 
 -prepend() same as append but puts element at the beginning. 
 
+*********************************
 ---removeChild() and remove()---
+*********************************
+
 -removeChild() will remove a child element from its parent
     Example: 
       parentEl.removeChild(childEl)
