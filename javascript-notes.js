@@ -334,12 +334,24 @@ A better way:
 ---Events---
 *********************************
 
+-We have tons of events that we can listen for 
+-Clicks, drags, drops, scrolls, etc. 
 
+*****************************
+---How NOT to add an event---
+*****************************
 
+-Adding events has a few different parts:
+1. The thing that is listening for an event
+2. The type of event that we're listening for (click, scroll, etc.)
+3. The code we want to run when the event happens 
 
+TWO things to avoid: 
+-adding event listeners "in line" on the element in the html 
+    Example: 
+    <button onClick="alert('You clicked me!)"></button>
 
-
-
+-
 
 
 
