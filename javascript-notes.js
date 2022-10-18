@@ -330,6 +330,9 @@ A better way:
 -remove() doesn't need the parent! 
     -remove(removedEl)
     
+*********************************
+---Events---
+*********************************
 
 
 
