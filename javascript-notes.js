@@ -381,9 +381,15 @@ ELEMENTS ARE OBJECTS!!
     -if you console.dir(element) it'll show you that the element is indeed an object 
 
 
+**************************************
+---The Event Object---
+**************************************
 
-
-
+-Gives you access to lots of data about the event! 
+    -It's automatically passed to an event 
+-some events like keypress won't give us all the data we want, but others will (like keydown).
+-console.log is your friend because you can use it to see what is being sent to the DOM and extract the data that you want 
+to work with 
 
 
 
