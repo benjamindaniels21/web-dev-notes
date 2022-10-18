@@ -347,11 +347,57 @@ A better way:
 3. The code we want to run when the event happens 
 
 TWO things to avoid: 
--adding event listeners "in line" on the element in the html 
+1. adding event listeners "in line" on the element in the html 
     Example: 
     <button onClick="alert('You clicked me!)"></button>
+    This makes things more cluttered 
+2. adding an event in javascript directly to the element. 
+    Example:
+    btn.onclick = () =>{
+      console.log("Clicked")
+    }
+    This means you can only use it once...couldn't add two things for it to do. 
+    
+*********************************
+---addEventListener---
+*********************************
 
--
+-You can add any type of event listener we want 
+    -click, mouseover, etc. 
+-We can use as many as we want! 
+    -Hooray! 
+-Can even have multiples of the same event type 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
