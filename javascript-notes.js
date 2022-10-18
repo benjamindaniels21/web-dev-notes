@@ -373,6 +373,9 @@ TWO things to avoid:
 ---Add events to multiple elements---
 **************************************
 
+-You can use loops to create multiple elements 
+-if you create an element, remember to append it. 
+
 You can use the 'this' keyword to access something that has happened to an HTML element because
 ELEMENTS ARE OBJECTS!! 
     -if you console.dir(element) it'll show you that the element is indeed an object 
