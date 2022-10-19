@@ -391,7 +391,10 @@ ELEMENTS ARE OBJECTS!!
 -console.log is your friend because you can use it to see what is being sent to the DOM and extract the data that you want 
 to work with 
 
-
+keydown/keyup vs keypress 
+-keypress only fires when something shows up in an input.
+-the other two will fire whenever something is pressed! 
+    -A little harder to control 
 
 
 
