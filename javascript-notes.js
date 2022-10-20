@@ -411,6 +411,12 @@ keydown/keyup vs keypress
 
 -To stop this we can use preventDefault on the submit event 
 
+***********************
+---Input Event---
+***********************
+
+-This is a way for us to keep track of a form as the data changes, instead of waiting for a submit button to be clicked. 
+
 
 
 
