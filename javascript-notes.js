@@ -399,10 +399,17 @@ keydown/keyup vs keypress
 
 
 
+*********************************
+---working with Forms---
+*********************************
 
+-Forms are usually designed to take data from an input (checkboxes, text inputs, dropdowns, etc.) and send it somewhere 
+    -usually sent to some url 
+-The old way of working with forms had the page refresh when the form was submitted, but with the rise of Single Page Applications like React, Angular, and Vue we now can catch that data, use it (or send to a database) without a page refresh. 
 
+-Form submission can be a pain because the form, once submitted, will want to refresh the page or direct you to a new endpoint...
 
-
+-To stop this we can use preventDefault on the submit event 
 
 
 
