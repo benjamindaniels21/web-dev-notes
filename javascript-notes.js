@@ -418,6 +418,13 @@ keydown/keyup vs keypress
 -This is a way for us to keep track of a form as the data changes, instead of waiting for a submit button to be clicked. 
 
 
+***********************
+---Change Event---
+***********************
+
+-Very similar to input event but text won't be submitted until you're not clicked into the text box. 
+
+
 
 
 
