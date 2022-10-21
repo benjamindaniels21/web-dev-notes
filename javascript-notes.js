@@ -425,7 +425,9 @@ keydown/keyup vs keypress
 -Very similar to input event but text won't be submitted until you're not clicked into the text box. 
 
 
-
+*********************
+---The Call Stack---
+*********************
 
 
 
