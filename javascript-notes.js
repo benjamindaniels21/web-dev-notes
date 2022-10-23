@@ -431,6 +431,10 @@ keydown/keyup vs keypress
 
 The way that JS uses to keep track of where it is in the code. How JS knows what function is currently being run and what are called and what's not done yet
 
+The "call" makes intuitive sense...it keeps track of the things that we're asking it to do (or calling). 
+
+The "stack" part has to do with the order in which things are done. Think of a stack of books! The last one you add will be the first thing out...you don't grab from the bottom. 
+
 
 ***********************
 ---Asynchronous Code---
