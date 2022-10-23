@@ -435,7 +435,9 @@ The "call" makes intuitive sense...it keeps track of the things that we're askin
 
 The "stack" part has to do with the order in which things are done. Think of a stack of books! The last one you add will be the first thing out...you don't grab from the bottom. 
 
-When a function is called, it's added to the top of the stack, and if there are any other functions that are called by that function they're added on top of the stack further up and run where their calls are reached. When a function completes, it's taken off the top of the stack. 
+When a function is called, it's added to the top of the stack, and if there are any other functions that are called by that function they're added on top of the stack further up and run where their calls are reached. When a function completes (returns a value), it's taken off the top of the stack. 
+
+
 
 
 
