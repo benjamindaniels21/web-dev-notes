@@ -429,6 +429,7 @@ keydown/keyup vs keypress
 ---The Call Stack---
 *********************
 
+The way that JS uses to keep track of where it is in the code. How JS knows what function is currently being run and what are called and what's not done yet
 
 
 ***********************
