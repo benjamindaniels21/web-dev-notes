@@ -438,6 +438,10 @@ The "stack" part has to do with the order in which things are done. Think of a s
 When a function is called, it's added to the top of the stack, and if there are any other functions that are called by that function they're added on top of the stack further up and run where their calls are reached. When a function completes (returns a value), it's taken off the top of the stack. 
 
 
+***************************************************
+---Using the Dev Tools to Access the Call Stack---
+***************************************************
+
 
 
 
