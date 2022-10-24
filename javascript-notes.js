@@ -442,7 +442,7 @@ When a function is called, it's added to the top of the stack, and if there are 
 ---Using the Dev Tools to Access the Call Stack---
 ***************************************************
 
-
+In the chrome dev tools you can use the "Sources" tab to step through your code. If you want the code to not run past a certain line you can insert a breakpoint by highlighting the line. 
 
 
 ***********************
