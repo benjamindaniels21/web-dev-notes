@@ -449,6 +449,23 @@ In the chrome dev tools you can use the "Sources" tab to step through your code.
     -Things stay on the stack until something is returned! (IMPORTANT)
 
 
+******************************
+---JS is Single Threaded---
+******************************
+
+-Only one thing happens at a time. 
+Example:
+console.log("I happen first");
+alert("I'm alerting you!");
+console.log("I happen second!")
+
+-The alert is going to pop up and will stop everything until 
+the ok button is pressed.
+
+-This is because JS is single threaded and can only complete one task at a time. 
+
+
+
 *****************************
 ---Asynchronous Callbacks---
 *****************************
