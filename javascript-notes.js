@@ -494,6 +494,14 @@ happens. That's because the browser does the work!
 
 -Web APIs 
 
+********************
+---callback hell---
+********************
+
+-callback hell happens when we have things that need to run in succession. 
+-If we had a series of setTimeouts you can imagine that we'd have tons of nesting 
+  -Makes life a mess and difficult to read! 
+    -No. Fun. 
 
 
 
