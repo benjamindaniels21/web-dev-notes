@@ -475,8 +475,24 @@ the ok button is pressed.
 ---Asynchronous Callbacks---
 *****************************
 
+-So what if we have something like this: 
 
+console.log("I happen first");
+setTimeout(function(){
+  console.log("I happen third")
+}, 3000);
+console.log("I happen second!")
 
+-It would seem like JS wouldn't be able to do anything but deal with the second line until the timer is up...but that's not what
+happens. That's because the browser does the work! 
+
+-The browser !=== Javascript 
+  -The browser runs JS code, but is written in another language
+    -usually C++
+
+-The browser does a lot, like making API calls and requests! 
+
+-Web APIs 
 
 
 
