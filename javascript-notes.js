@@ -464,11 +464,18 @@ the ok button is pressed.
 
 -This is because JS is single threaded and can only complete one task at a time. 
 
+-We ask JS to do things that take time...like API requests...
+    -How does this work? Why doesn't everything stop???
+    -It doesn't actually stop everything, because of asynchronous code! 
+
+-JS has ways around it's singlethreadedness (is that a word??)
 
 
 *****************************
 ---Asynchronous Callbacks---
 *****************************
+
+
 
 
 
