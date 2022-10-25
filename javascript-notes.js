@@ -449,9 +449,9 @@ In the chrome dev tools you can use the "Sources" tab to step through your code.
     -Things stay on the stack until something is returned! (IMPORTANT)
 
 
-***********************
----Asynchronous Code---
-***********************
+*****************************
+---Asynchronous Callbacks---
+*****************************
 
 
 
