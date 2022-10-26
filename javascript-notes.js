@@ -512,6 +512,8 @@ happens. That's because the browser does the work!
 
 -They get you out of callback hell.
 
+-While a promise is waiting to resolve it's put into a 'pending' state
+
 
 
 */
