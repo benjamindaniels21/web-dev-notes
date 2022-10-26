@@ -504,6 +504,14 @@ happens. That's because the browser does the work!
     -No. Fun. 
 
 
+********************
+---Promises---
+********************
+
+-A promise is an object that represents the eventual completion or failure of an asynchronous task and its resulting value.
+
+-They get you out of callback hell.
+
 
 
 */
