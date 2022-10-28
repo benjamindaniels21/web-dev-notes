@@ -514,6 +514,17 @@ happens. That's because the browser does the work!
 
 -While a promise is waiting to resolve it's put into a 'pending' state
 
+-You can do things after a promise resolves with a .then()
+-You can do things after a promise is rejected with .catch()
+
+-You can chain a .then() and .catch() together to handle errors
+
+-When you reject/resolve a promise you can resolve it with a value. 
+
+
+
+
+
 
 
 */
