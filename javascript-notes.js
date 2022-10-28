@@ -520,10 +520,11 @@ happens. That's because the browser does the work!
 -You can chain a .then() and .catch() together to handle errors
 
 -When you reject/resolve a promise you can resolve it with a value. 
+  -The whole point is to either get some data or to show why it failed. 
 
+  -Similar to how HTTP requests work...status codes give you info about what happened...200 vs. 404 
 
-
-
+-In your resolve and reject you can return data to the user (values, objects, etc.)
 
 
 
