@@ -526,6 +526,6 @@ happens. That's because the browser does the work!
 
 -In your resolve and reject you can return data to the user (values, objects, etc.)
 
-
+-This is sort of the req and res side of HTTP requests...making more sense now. 
 
 */
