@@ -528,4 +528,19 @@ happens. That's because the browser does the work!
 
 -This is sort of the req and res side of HTTP requests...making more sense now. 
 
+
+
+***********************
+---Promise Chaining---
+***********************
+
+-Promises can be chained together such that one waits for another to resolve. 
+-For example: You have a webpage endpoint that needs to exist before checking for another potential endpoint
+  -/users  <---maybe this is ALL of the users
+  -users/1 <---this could be a single user's data 
+
+
+
+
+
 */
