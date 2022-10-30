@@ -540,7 +540,9 @@ happens. That's because the browser does the work!
   -users/1 <---this could be a single user's data 
 -Each chained promise would be nested inside the request 
   -Not too different than callback hell...
-
+-You can actually NOT NEST the promises! 
+  -You can just go: 
+    .then(something happens).then.(more things happen after the first thing happens)
 
 
 */
