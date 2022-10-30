@@ -539,7 +539,7 @@ happens. That's because the browser does the work!
   -/users  <---maybe this is ALL of the users
   -users/1 <---this could be a single user's data 
 -Each chained promise would be nested inside the request 
-
+  -Not too different than callback hell...
 
 
 
