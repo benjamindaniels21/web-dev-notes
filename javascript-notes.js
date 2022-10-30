@@ -543,6 +543,6 @@ happens. That's because the browser does the work!
 -You can actually NOT NEST the promises! 
   -You can just go: 
     .then(something happens).then.(more things happen after the first thing happens)
-
+-You can add a .catch() to catch any errors at the end of the chain. It'll only run if ANY of the .then() don't work/return 
 
 */
