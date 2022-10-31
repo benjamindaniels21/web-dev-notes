@@ -545,4 +545,22 @@ happens. That's because the browser does the work!
     .then(something happens).then.(more things happen after the first thing happens)
 -You can add a .catch() to catch any errors at the end of the chain. It'll only run if ANY of the .then() don't work/return 
 
+-The benefit of Promise chaining is that the code is so much easier to read, which is a huge advantage. 
+-It's not just about being "ugly" or "beautiful", it's mostly about readability
+  -You want to be able to look at some code, or have someone that looks at YOUR CODE be able to understand what's going on
+    -Comments help! But so does having a solid and logical structure to the code itself. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
