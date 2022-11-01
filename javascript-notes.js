@@ -551,7 +551,15 @@ happens. That's because the browser does the work!
     -Comments help! But so does having a solid and logical structure to the code itself. 
 
 
+********************
+---HTTP Requests---
+********************
 
+-These are async actions because you're requesting data! 
+-XMLHTTP 
+-Fetch
+-Axios
+  -Library to make HTTP requests 
 
 
 
