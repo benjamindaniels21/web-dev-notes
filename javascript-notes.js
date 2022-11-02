@@ -602,9 +602,13 @@ There are alternatives to XHR!
   -This allows us to use all of the magic of JS on this data! 
 
 
+**********************
+---More on Requests---
+**********************
 
-
-
+-The pain in the ass part is when you send a request and get back data that would necessitate another request.
+  -This is where you need some async magic to happen
+-The reason we use Fetch or another method is that they can handle promises. 
 
 
 
