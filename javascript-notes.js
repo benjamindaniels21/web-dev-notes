@@ -611,10 +611,21 @@ There are alternatives to XHR!
 -The reason we use Fetch or another method is that they can handle promises. 
 
 
+**********************
+---Fetch API---
+**********************
 
+-Was created because XHR sucks. 
+-The only problem with Fetch is that it's not supported in internet explorer
 
-
-
+-To use Fetch we pass in a url 
+-Fetch returns a promise! 
+  -We can use .then and .catch 
+-it will respond with a response object 
+  -It's a little different than just a normal object.
+  -The data lives inside the Body which is a "readable stream"
+  -A stream is a way of accessing large amounts of data that is processed as we go.
+  
 
 
 
