@@ -561,10 +561,15 @@ happens. That's because the browser does the work!
 -Axios
   -Library to make HTTP requests 
 
+AJAX
+  -Asynchronous Javascript and XML 
+  -Using Async requests to communicate w/ a server 
 
 
-
-
+JSON
+  -A format for sending data 
+  -JavaScript Object Notation 
+  -A protocol for formatting data 
 
 
 
