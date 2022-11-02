@@ -581,10 +581,13 @@ XML
   -Looks a lot like html with tags <example></example>
   
 
+**********************
+---Sending Requests---
+**********************
 
 
-
-
+XML HTTP Requests
+  -original way of sending requests via JS 
 
 
 
