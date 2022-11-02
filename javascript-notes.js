@@ -626,6 +626,10 @@ There are alternatives to XHR!
   -The data lives inside the Body which is a "readable stream"
   -A stream is a way of accessing large amounts of data that is processed as we go.
   
+-The body.json will read the stream 
+  -I can take a while...and returns another damn promise!! 
+
+-If HTTP response is 404 fetch will still resolve the promise and not run the .catch()
 
 
 
