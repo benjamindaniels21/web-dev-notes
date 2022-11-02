@@ -586,10 +586,12 @@ XML
 **********************
 
 
-XML HTTP Requests
+XML Http Requests
   -original way of sending requests via JS 
+  -Doesn't support promises 
+  -XHR is an XML Http Request 
 
-
+There are alternatives to XHR! 
 
 
 
