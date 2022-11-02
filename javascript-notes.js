@@ -570,12 +570,36 @@ JSON
   -A format for sending data 
   -JavaScript Object Notation 
   -A protocol for formatting data 
+  -Looks like JS but it's not. 
+    -Can be TURNED into JS easily 
 
 
 XML 
   -Like the parent of HTML 
   -Looks a lot like html with tags <example></example>
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
