@@ -593,8 +593,13 @@ XML Http Requests
 
 There are alternatives to XHR! 
 
+***********************
+---Working with JSON---
+************************
 
-
+-JSON is not javascript 
+-JSON.parse will give us valid JS 
+  -This allows us to use all of the magic of JS on this data! 
 
 
 
