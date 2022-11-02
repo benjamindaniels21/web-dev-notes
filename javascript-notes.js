@@ -572,7 +572,10 @@ JSON
   -A protocol for formatting data 
 
 
-
+XML 
+  -Like the parent of HTML 
+  -Looks a lot like html with tags <example></example>
+  
 
 
 
