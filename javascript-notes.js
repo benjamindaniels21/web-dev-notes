@@ -572,6 +572,8 @@ JSON
   -A protocol for formatting data 
   -Looks like JS but it's not. 
     -Can be TURNED into JS easily 
+  -You could use another language with that data...
+    -Doesn't have to use JS, could use Python, Ruby, etc. 
 
 
 XML 
