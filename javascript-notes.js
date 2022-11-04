@@ -630,6 +630,8 @@ There are alternatives to XHR!
   -I can take a while...and returns another damn promise!! 
 
 -If HTTP response is 404 fetch will still resolve the promise and not run the .catch()
+  -only if something prevents the response from completing like a network failure 
+
 
 
 
