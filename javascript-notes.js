@@ -632,6 +632,9 @@ There are alternatives to XHR!
 -If HTTP response is 404 fetch will still resolve the promise and not run the .catch()
   -only if something prevents the response from completing like a network failure 
 
+-The reason that fetch is preferred over XMLHttp is that fetch will return promises which means that you can use the .catch and .then syntax which is much more readable.
+  -After this resolves, do THIS
+  -If there's an error do THAT 
 
 
 
