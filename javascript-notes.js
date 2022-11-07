@@ -636,7 +636,8 @@ There are alternatives to XHR!
   -After this resolves, do THIS
   -If there's an error do THAT 
 
-
+You can create a resolved promise with Promise.resolve(data);
+  -This can help in refactoring and having a more terse chain of .thens 
 
 
 **********************
