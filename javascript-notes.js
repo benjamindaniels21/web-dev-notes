@@ -646,7 +646,12 @@ You can create a resolved promise with Promise.resolve(data);
 
 
 -An alternative to Fetch! 
-
+-Can find it on github 
+-Uses fetch behind the scenes 
+-Makes fetch a little more simple
+-Promise based
+-Can use it on the client or server side 
+-
 
 
 
