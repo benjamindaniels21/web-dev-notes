@@ -651,7 +651,14 @@ You can create a resolved promise with Promise.resolve(data);
 -Makes fetch a little more simple
 -Promise based
 -Can use it on the client or server side 
--
+
+when you make a request it gives you back a promise that has a data property that you can immediately tap into...don't have to a deal with bad status codes 
+  -Because Fetch will resolve even with a 404 
+    -Not great, because that's really an error. 
+-Gets rid of doing a bunch of .thens because we're not having to turn anything into JSON and so forth
+
+-If you get a 404 then you use .catch to throw an error. MUCH EASIER. 
+
 
 
 
