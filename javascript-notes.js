@@ -659,6 +659,33 @@ when you make a request it gives you back a promise that has a data property tha
 
 -If you get a 404 then you use .catch to throw an error. MUCH EASIER. 
 
+-Allows us to other types of requests easily (post, put, etc.)
+
+
+****chaining in Axios****
+
+axios.get(url)
+.then(({data}) => {
+console.log(data)
+for(let planet of data.results){
+  console.log(planet.name)
+}
+axios.get(data.next).then()... <--- you can do your chaining here but it's not as readable...
+  //The nice thing is that Axios can return a promise by just doing return axios.get(data.next) <---this is a promise, so you can move the .then outside of this function. 
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 
