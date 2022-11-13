@@ -672,15 +672,22 @@ for(let planet of data.results){
 }
 axios.get(data.next).then()... <--- you can do your chaining here but it's not as readable...
   //The nice thing is that Axios can return a promise by just doing return axios.get(data.next) <---this is a promise, so you can move the .then outside of this function. 
-
-
 })
 
+-Don't have to worry about status codes so much 
+-You can also define functions above all of your calls instead of defining functions inline, inside of the axios get calls 
 
 
 
 
 
+**********************
+---Async/Await---
+**********************
+
+-syntatic sugar for promises 
+  -Makes it easier to do the same dang thing
+  -An easier syntax that accomplishes the same task
 
 
 
