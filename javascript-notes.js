@@ -689,6 +689,12 @@ axios.get(data.next).then()... <--- you can do your chaining here but it's not a
   -Makes it easier to do the same dang thing
   -An easier syntax that accomplishes the same task
 
+-Makes it easier to work with promises 
+
+
+
+
+
 
 bump
 
