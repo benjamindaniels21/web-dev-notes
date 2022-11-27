@@ -692,8 +692,19 @@ axios.get(data.next).then()... <--- you can do your chaining here but it's not a
 -Makes it easier to work with promises 
 
 
-Async and Await are keywords we can use to tell the program to WAIT until the promise
+-Async and Await are keywords we can use to tell the program to WAIT until the promise
 is resolved
+
+-In order to use it you start by using the async keyword.
+  Like this: 
+    async function hello(){
+      return "Hey dude";
+    }
+  -When you use async it will automatically return a promise! 
+
+
+
+
 
 
 bump
