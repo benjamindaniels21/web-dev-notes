@@ -692,8 +692,8 @@ axios.get(data.next).then()... <--- you can do your chaining here but it's not a
 -Makes it easier to work with promises 
 
 
-
-
+Async and Await are keywords we can use to tell the program to WAIT until the promise
+is resolved
 
 
 bump
