@@ -702,8 +702,15 @@ is resolved
     }
   -When you use async it will automatically return a promise! 
   -You don't have to explicitly say "return me a promise, function!"
-
-
+  -You can use the "throw" keyword within the function to deal with errors 
+    
+  async function add(){
+    if (typeof a !== 'number' \\ typeof b !== 'number'){
+      throw 'A and B must be numbers!'
+    }
+    return a + b;
+  }
+  -This helps deal with rejected promises 
 
 
 bump
