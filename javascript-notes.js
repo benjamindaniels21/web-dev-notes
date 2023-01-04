@@ -701,8 +701,7 @@ is resolved
       return "Hey dude";
     }
   -When you use async it will automatically return a promise! 
-
-
+  -You don't have to explicitly say "return me a promise, function!"
 
 
 
