@@ -721,9 +721,9 @@ is resolved
   }
 
   ^^^ this will WAIT until the data is fetched from the API (promise resolves) before going on to the console log
-  
 
-bump
+
+multiple awaits: 
 
 
 
