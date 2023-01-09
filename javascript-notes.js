@@ -712,6 +712,16 @@ is resolved
   }
   -This helps deal with rejected promises 
 
+  'await' will make stop everything from moving on until a promise is resolve 
+  Like this: 
+
+  async function getPlanets(){
+    const res = await axios.get(starWarsAPICall)
+    console.log(res.data)
+  }
+
+  ^^^ this will WAIT until the data is fetched from the API (promise resolves) before going on to the console log
+  
 
 bump
 
