@@ -685,7 +685,7 @@ axios.get(data.next).then()... <--- you can do your chaining here but it's not a
 ---Async/Await---
 **********************
 
--syntatic sugar for promises 
+-syntactic sugar for promises 
   -Makes it easier to do the same dang thing
   -An easier syntax that accomplishes the same task
 
@@ -713,6 +713,7 @@ is resolved
   -This helps deal with rejected promises 
 
   'await' will make stop everything from moving on until a promise is resolve 
+    -MUST be used INSIDE the async function 
   Like this: 
 
   async function getPlanets(){
@@ -745,7 +746,23 @@ exampleFunc().catch(err => {
   console.log(err);
 })
 
+*************************************
+--Parallel vs. Sequential Requests--
+*************************************
+-Sequential requests will wait until the promise resolves
+-Parallel requests are fired off immediately and will go while the previous requests are pending
+  -This is the way to go if the promises are not dependent upon one another 
 
+-Sequential will take a little longer 
+
+*********************************
+--Promise.all--
+*********************************
+-returns an array of promises 
+-looks like this:
+  await Promise.all([prom1, prom2, prom3]);
+
+-It will wait until ALL the promises are resolved and then moves on. 
 
 
 
