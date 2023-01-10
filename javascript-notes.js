@@ -724,6 +724,26 @@ is resolved
 
 
 multiple awaits: 
+You can simply add multiple awaits in an async function and, so long as they resolve, they'll keep moving along
+
+Handling errors in async functions:
+You can use a try/catch inside the function like this
+
+async function exampleFunc(){
+  try{
+    do something here
+  } catch {
+    error handling goes here
+  }
+}
+
+It sort of looks like an if/else statement 
+
+otherwise you can add a .catch to the function call to handle the error
+
+exampleFunc().catch(err => {
+  console.log(err);
+})
 
 
 
