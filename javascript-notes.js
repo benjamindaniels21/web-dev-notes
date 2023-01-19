@@ -765,5 +765,40 @@ exampleFunc().catch(err => {
 -It will wait until ALL the promises are resolved and then moves on. 
 
 
+*********************************
+--Constructor Function--
+*********************************
+
+If you're using a an object and define a method on it, every time you make
+a new object it will create a new copy of that method.
+
+However if you call a method on a string or array and check for equality then it'll return true. 
+This is because these methods are defined on the object prototype...not in each instance of the data type. 
+  -can see it by console.log and look @ __proto__ section 
+
+Constructor function 
+
+Example: 
+
+function Car(name, model, color){
+  this.name = name; 
+  this.model = model;
+  this.color = color;
+}
+
+-Notice how the function name is capitalized
+  -A way to show or indicate this is a way to make new things based on the function 
+
+When you just call the function and pass in arguments you get undefined.
+  -"this" is set to the window object...not the object itself
+  -Ex:
+
+  Car('George', 'Prius', 'blue')
+      -Returns undefined ^^^^^
+
+
+
+If you use the "new" keyword then you'll get what you want
+
 bump
 */
