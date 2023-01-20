@@ -799,6 +799,12 @@ When you just call the function and pass in arguments you get undefined.
 
 
 If you use the "new" keyword then you'll get what you want
+  -It will return the value of the given newly created object
+
+  Ex: 
+  const car1 = new Car("Betty", "Camaro", "Pink");
+
+
 
 bump
 */
