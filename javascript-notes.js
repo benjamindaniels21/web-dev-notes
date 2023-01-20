@@ -805,6 +805,40 @@ If you use the "new" keyword then you'll get what you want
   const car1 = new Car("Betty", "Camaro", "Pink");
 
 
+*********************************
+--JS Classes--
+*********************************
 
+
+keyword "class"
+
+class Color {
+   constructor(r,g,b){
+    console.log('inside color');
+    console.log(r,g,b);
+   }
+}
+
+
+-you must have the class keyword and use the constructor function inside
+  -both are needed 
+
+class Color {
+   constructor(r,g,b){
+   this.r = r;
+   this.g =g;
+   this.b = b;
+   this.name = name;
+   }
+   greet(){
+    return `Hello from ${this.name}`
+   }
+}
+
+const color1 = new Color(255, 55, 50, "tomato");
+
+  -This will make a brand new object with all of these properties. 
+    -So fancy
+  -greet() will be a __proto__ method! 
 bump
 */
