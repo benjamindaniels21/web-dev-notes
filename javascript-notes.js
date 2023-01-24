@@ -840,5 +840,99 @@ const color1 = new Color(255, 55, 50, "tomato");
   -This will make a brand new object with all of these properties. 
     -So fancy
   -greet() will be a __proto__ method! 
+
+*********************
+--Extends and Super--
+*********************
+
+class Cat{
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+  }
+  eat(){
+    return `${this.name} is eating`
+  }
+  meow(){
+    return 'Meow!!!'
+  }
+}
+
+
+class Dog {
+   constructor(name, age){
+    this.name = name;
+    this.age = age;
+  }
+  eat(){
+    return `${this.name} is eating`
+  }
+  bark(){
+    return 'woof'
+  }
+}
+
+
+-Both of these classes are extremely similar...we can use some JS tools to help us make it easier
+
+
+class Pet {
+  constructor(name, age){
+    this.name = name; 
+    this.age = age;
+  }
+    eat(){
+    return `${this.name} is eating`
+  }
+}
+
+
+class Cat{
+  meow(){
+    return 'Meow!!!'
+  }
+}
+
+
+class Dog {
+  bark(){
+    return 'woof'
+  }
+}
+
+
+-Up to this point we have extracted the common aspects of the Dog and Cat original classes, but since we took out the constructor function
+we can no longer create a new Dog or Cat with the "new" keyword
+-We're going to add the "extends" keyword to utilize the functionality of the Pet class inside these other two classes
+
+class Cat extends Pet{
+  meow(){
+    return 'Meow!!!'
+  }
+}
+
+
+class Dog extends Pet{
+  bark(){
+    return 'woof'
+  }
+}
+
+-Now we could run this code and it would work in the browser:
+  const wyatt = new Dog('Wyatt', 6);
+
+-Even though we don't have a constructor it's referenced from the extended class, unless we put a constructor inside of the class
+-This could be useful if we want different info in a particular class. If some of the info comes from the extended class, then we can use the "super" keyword to reference that info, like this:  
+
+
+class Cat extends Pet{
+  constructor(name, age, livesLeft = 9){
+    super(name, age);
+    this.livesLeft = livesLeft; 
+  }
+}
+
+
+
 bump
 */
