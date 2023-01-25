@@ -931,6 +931,19 @@ class Cat extends Pet{
     this.livesLeft = livesLeft; 
   }
 }
+*******************************
+--determine value of 'this'---
+*******************************
+
+To determine value of 'this' 
+
+Did you use an arrow function --> write a console.log on the first valid line above the arrow function. Value of 'this' in the arrow function will be equal to that console log
+
+Dig you call 'bind', 'call', or 'apply' on the function when you invoked it? --> 'this' is equal to the first argument of 'bind', 'call', or 'apply'
+
+All other cases --> 'this' is equal to whatever is to the left of the '.' in the method call. 
+
+
 
 
 
