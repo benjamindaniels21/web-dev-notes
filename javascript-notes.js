@@ -949,5 +949,16 @@ All other cases --> 'this' is equal to whatever is to the left of the '.' in the
 *******************************
 I'm confused about this part...look into it more. 
 
+
+*******************************
+--SVGs---
+*******************************
+
+-SVG elements in HTML basically create a little canvas for you to draw
+-Origin is the top left 
+-Don't use negative values
+    -That's outside the canvas 
+
+
 bump
 */
