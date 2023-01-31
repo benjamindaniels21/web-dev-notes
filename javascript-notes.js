@@ -958,6 +958,11 @@ I'm confused about this part...look into it more.
 -Origin is the top left 
 -Don't use negative values
     -That's outside the canvas 
+    -Anything that's outside the canvas will get clipped 
+-There are different SVG elements that you can use (circles, rectangles, polygon)   
+-SVGs have fill and stroke 
+-stroke-dasharray is the amount of strokes around a circle 
+-circle boarders start on the right and go around clockwise
 
 
 bump
