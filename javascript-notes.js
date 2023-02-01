@@ -965,5 +965,12 @@ I'm confused about this part...look into it more.
 -circle boarders start on the right and go around clockwise
 
 
+*******************************
+--Working with an API---
+*******************************
+
+-We need an API key usually 
+
+
 bump
 */
