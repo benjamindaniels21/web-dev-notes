@@ -970,6 +970,21 @@ I'm confused about this part...look into it more.
 *******************************
 
 -We need an API key usually 
+-async and await are helpful for waiting for a request to resolve before doing something 
+
+
+*******************************
+--setTimeout and clearTimeout---
+*******************************
+
+setTimeout will do something after a given interval of time 
+  setTimeout( () => {
+    console.log('yo');
+  }, 1000)
+    -This will console.log after 1 sec 
+
+
+
 
 
 bump
