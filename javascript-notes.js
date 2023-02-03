@@ -983,9 +983,12 @@ setTimeout will do something after a given interval of time
   }, 1000)
     -This will console.log after 1 sec 
 
+*******************************
+--Debouncing---
+*******************************
 
-
-
+-This is when we wait until something has finished until we actually do the thing
+-Like "wait until a user is done inputting text into the field before running the function or API call"
 
 bump
 */
