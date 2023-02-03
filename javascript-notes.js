@@ -989,6 +989,21 @@ setTimeout will do something after a given interval of time
 
 -This is when we wait until something has finished until we actually do the thing
 -Like "wait until a user is done inputting text into the field before running the function or API call"
+-Reasons: limiting API calls due to limits of requests per day allowed 
+
+*************************************
+--Using functions in separate files---
+*************************************
+
+-If you have some functions/data and you want to use it in a page you can make sure that you reference in the HTML first 
+  -Ex: if you have some utility funcs that you want to use...first reference them <script src='utils.js'></script> 
+  and then the other js files that are dependent on that one 
+
+
+
+
+
+
 
 bump
 */
