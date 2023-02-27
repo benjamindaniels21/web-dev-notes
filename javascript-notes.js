@@ -1000,9 +1000,12 @@ setTimeout will do something after a given interval of time
   and then the other js files that are dependent on that one 
 
 
+*******************************
+--Middleware---
+*******************************
 
-
-
+-Function that does some pre-processing on 'req' and 'res' objects 
+-Primary means of code reuse in express 
 
 
 bump
