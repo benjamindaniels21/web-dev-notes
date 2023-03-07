@@ -1007,6 +1007,11 @@ setTimeout will do something after a given interval of time
 -Function that does some pre-processing on 'req' and 'res' objects 
 -Primary means of code reuse in express 
 
+*******************************
+--Cookies for Authentication---
+*******************************
+
+
 
 bump
 */
