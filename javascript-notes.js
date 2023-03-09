@@ -1014,8 +1014,8 @@ setTimeout will do something after a given interval of time
 -Cookies are a very common way for websites to handle authentication. 
 -When a website does a request from a server for the first time the server will ofter respond with a cookie 
 -A cookie is a small string of characters that the server asks the web browser to store 
--It allows for server to identify a user 
-
+  -It allows for server to identify a user 
+  
 
 
 
