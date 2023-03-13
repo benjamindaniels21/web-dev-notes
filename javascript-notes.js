@@ -1025,6 +1025,11 @@ setTimeout will do something after a given interval of time
 -Makes it possible for you to store passwords/emails safely 
 -You can't go from hashed value to the original input 
 
+***Salting***
+-a random string of characters appended to a password 
+-Makes even a common password ('password') harder to figure out 
+
+
 
 bump
 */
