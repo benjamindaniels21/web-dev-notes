@@ -1016,8 +1016,14 @@ setTimeout will do something after a given interval of time
 -A cookie is a small string of characters that the server asks the web browser to store 
   -It allows for server to identify a user 
   
+*******************************
+--Hashing---
+*******************************
 
-
+-An algorithm that takes a given input and outputs a long string of characters 
+-There are many different types of hashing algos 
+-Makes it possible for you to store passwords/emails safely 
+-You can't go from hashed value to the original input 
 
 
 bump
