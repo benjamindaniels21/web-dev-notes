@@ -1029,6 +1029,20 @@ setTimeout will do something after a given interval of time
 -a random string of characters appended to a password 
 -Makes even a common password ('password') harder to figure out 
 
+****************
+--Validation--
+****************
+-Making sure a user's input matches a given criteria 
+
+
+--sanitization--
+-changing a user's input so it conforms to a standard
+  -Examples: trimming out leading or trailing whitespace(s)
+
+
+
+
+
 
 
 bump
