@@ -1051,8 +1051,10 @@ setTimeout will do something after a given interval of time
 
 -POST requests will wrap the data in a post request to the server 
 
-
-
+-You can use enctype= "" to specify encoding type 
+  -Default value is "application/x-www-form-urlencoded"
+    -This means take all data and transport it inside of a url 
+    
 
 bump
 */
