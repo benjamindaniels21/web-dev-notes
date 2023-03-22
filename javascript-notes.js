@@ -1054,7 +1054,10 @@ setTimeout will do something after a given interval of time
 -You can use enctype= "" to specify encoding type 
   -Default value is "application/x-www-form-urlencoded"
     -This means take all data and transport it inside of a url 
-    
-
+    -turns it into a query string 
+    -The problem with this is that the data inside may not be safe or efficiently transferred via string
+        -It might just ignore the values because it can't be transferred via a string.
+        -An image isn't able to be transferred via a string 
+  -We're using ="multipart/form-data" to transfer an image 
 bump
 */
