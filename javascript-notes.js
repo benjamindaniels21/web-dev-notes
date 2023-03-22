@@ -1040,7 +1040,16 @@ setTimeout will do something after a given interval of time
   -Examples: trimming out leading or trailing whitespace(s)
 
 
+****************
+--HTML Forms--
+****************
 
+-Forms have a default GET method attached
+  -With GET it will append the data to the url 
+
+-You can change the method with the "method" property on the Form element 
+
+-POST requests will wrap the data in a post request to the server 
 
 
 
