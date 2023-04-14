@@ -1060,4 +1060,33 @@ setTimeout will do something after a given interval of time
         -An image isn't able to be transferred via a string 
   -We're using ="multipart/form-data" to transfer an image 
 bump
+
+****************
+--Testing--
+****************
+
+-lots of people spend more time setting up testing than actually writing tests
+  -People will sometimes spend more time fighting the tests than running and using them 
+
+-Many frameworks are doing the same thing 
+
+-You don't need a testing library to test your code 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
