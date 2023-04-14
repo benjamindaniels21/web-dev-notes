@@ -1072,7 +1072,7 @@ bump
 
 -You don't need a testing library to test your code 
 
-
+-When we write a test we will usually use a naming convention like index.test.js if we're testing the index.js file
 
 
 
