@@ -1086,7 +1086,14 @@ bump
 
 -Whenever you want to use git you have to tell git to create a new repo. 
 
+-Git status 
+  -gives info on the current repo and its contents 
+  -it'll tell us if we're in  a repo or not. 
+    -If we are, it'll tell us what files have been modified, etc. 
 
+-Git init
+  -Initialize new repo 
+  -
 
 
 
