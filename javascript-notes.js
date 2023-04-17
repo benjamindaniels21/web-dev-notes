@@ -1077,6 +1077,14 @@ bump
 
 
 
+****************
+--Git--
+****************
+
+-What is a git repo? 
+  -a workspace that tracks and manages files within a folder 
+
+-Whenever you want to use git you have to tell git to create a new repo. 
 
 
 
