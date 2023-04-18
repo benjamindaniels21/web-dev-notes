@@ -1077,9 +1077,9 @@ bump
 
 
 
-****************
---Git--
-****************
+*************************
+----------Git------------
+*************************
 
 -What is a git repo? 
   -a workspace that tracks and manages files within a folder 
@@ -1093,7 +1093,7 @@ bump
 
 -Git init
   -Initialize new repo 
-  -
+  
 
 
 
