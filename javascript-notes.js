@@ -1095,6 +1095,29 @@ bump
   -Initialize new repo 
   
 
+*************************
+----------Scope----------
+*************************
+
+-Scope refers to the places where you have access to a variable's value
+-Some variables have local scope (only available where they're declared)
+-Other variables have global scope (available everywhere)
+
+-If a variable is created within a function, it cannot be accessed outside the function: 
+
+-var, let, and const 
+  -const can't be reassigned to a new value 
+    -Unless it's an object or array...we can add properties or values into those 
+
+-If any of these are declared outside the function, it's global scoped
+-Var can be accessed outside of an if/else statement. 
+  -This is not ideal, because it creates situations where bugs can be introduced 
+
+-Use let or const 
+
+
+
+
 
 
 
