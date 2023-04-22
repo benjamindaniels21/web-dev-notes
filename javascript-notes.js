@@ -1124,8 +1124,12 @@ bump
 -Modules allow you to package bits of code together and use them around your codebase
 -Ex: If you had a calendar app and you wanted to have all of the logic for finding what day it is, it would make sense to keep that separate from the other parts of the app. 
 
+*************************
+----------EJS-----
+*************************
 
-
+-EJS is a templating framework that allows for users to make reusable components 
+  -Sort of like an early version of React 
 
 
 
