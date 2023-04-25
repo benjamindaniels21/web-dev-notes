@@ -1154,7 +1154,12 @@ bump
     -Ex: SET price = 1.20 WHERE id = 1
         - Sets the price of product with id of 1 to 1.20 
 
-        
+-DELETE <-- deletes something 
+  -Ex: DELETE FROM products WHERE id = 1
+      -deletes the item with id 1 from products table 
+
+      
+
 
 
 
