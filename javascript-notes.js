@@ -1145,7 +1145,16 @@ bump
 
 - SELECT * FROM products <--- select everything from the 'products' table 
 
+-UPDATE <--- update a table 
+    -Ex: UPDATE products <---update the products table 
 
+-SET something = value <--- set will change a value 
+
+-WHERE <-- a set of conditions to be met 
+    -Ex: SET price = 1.20 WHERE id = 1
+        - Sets the price of product with id of 1 to 1.20 
+
+        
 
 
 
