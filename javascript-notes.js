@@ -1131,6 +1131,38 @@ bump
 -EJS is a templating framework that allows for users to make reusable components 
   -Sort of like an early version of React 
 
+*************************
+----------SQL-----
+*************************
+
+- Structured Query Language 
+  -Can be used with a variety of software (mySQL, postgreSQL)
+
+-SELECT <-- grabs data from a table 
+-FROM <-- specify table to grab data from 
+
+-* <--- Grab everything 
+
+- SELECT * FROM products <--- select everything from the 'products' table 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
