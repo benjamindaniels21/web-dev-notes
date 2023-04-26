@@ -1178,16 +1178,23 @@ Create:
   -Example: db.products.insertOne({_id: 1, name: "Pen", price: 1.20})
       -This will create a collection (like a table column in SQL) "products" and insert a new  document (record) into it ("Pen" with a price of 1.20)
 
--'show collections' will show you all the collections in your document 
+  -'show collections' will show you all the collections in your document 
 
--you can also create a new collection by using the db.createCollection("nameHere")
-  -Otherwise it'll get created when you insertOne()
+  -you can also create a new collection by using the db.createCollection("nameHere")
+    -Otherwise it'll get created when you insertOne()
 
-  -A COLLECTION ISN'T CREATE UNTIL IT GETS CONTENT
+    -A COLLECTION ISN'T CREATE UNTIL IT GETS CONTENT
 
--
-
-
+Read: 
+  -use the .find() to show the contents of a collection
+    -Ex: db.products.find() will list everything in the products collection...all of the documents will be shown. 
+  -.find() can be passed parameters for finding specific records 
+    -Ex: db.posts.find( {category: "News"} )
+        -Looks in the posts collection and returns all documents with the news category. 
+  -.find() takes a second parameter called the 'projection'
+    -This tells us which fields to include in the results
+        -Maybe we just want to find the address of the user with id: 1
+        -db.users.find({_id:1}, {address: 1})  the "1" after means include the field...0 means to exclude the field. 
 
 
 
