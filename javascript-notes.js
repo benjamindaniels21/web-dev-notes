@@ -1158,12 +1158,20 @@ bump
   -Ex: DELETE FROM products WHERE id = 1
       -deletes the item with id 1 from products table 
 
-      
 
 
+*************************
+----------MongoDB-----
+*************************
 
 
+-First create a directory for your DB 
+  -Create a folder in there called "data"
+-cd into that directory 
+  -sudo mongod --dbpath=data
+-This starts the mongo server
 
+-In a separate terminal start the mongo shell with "mongosh" command 
 
 
 
