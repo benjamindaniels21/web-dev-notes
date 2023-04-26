@@ -1173,10 +1173,10 @@ bump
 
 -In a separate terminal start the mongo shell with "mongosh" command 
 
-
-
-
-
+Create: 
+  -db.<name of collection>.insertOne()   <---inserts one document into (schema??)
+  -Example: db.products.insertOne({_id: 1, name: "Pen", price: 1.20})
+      -This will create a collection (like a table column in SQL) "products" and insert a new record into it ("Pen" with a price of 1.20)
 
 
 
