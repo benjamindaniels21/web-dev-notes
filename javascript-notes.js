@@ -1197,10 +1197,43 @@ Read:
         -db.users.find({_id:1}, {address: 1})  the "1" after means include the field...0 means to exclude the field. 
 
 Update:
-  -To update data we use the .updateOne() method 
+  -To update a document we use the .updateOne() method 
     -we specify the document with our first argument ({_id: 1})  <-- document w/id 1
     -the second argument will specify the value we want to change ({_id: 1}, {$set: {stock: 32}})...we use the "$set" keyword 
   -
 
+Delete: 
+  -to delete a document we use the .deleteOne() or .deleteMany();
+    -to delete one document you pass in an argument that matches the document (use the id)
+      -Ex: db.products.deleteOne({_id: 1}) <--- this finds the product with id: 1 and deletes it. 
+    -to delete ALL documents within a collection, just pass an empty object into the .deleteMany()
+      -Ex: db.products.deleteMany({})  <-- deletes ALL documents within the products collection 
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      */
