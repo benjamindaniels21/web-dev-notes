@@ -1196,9 +1196,11 @@ Read:
         -Maybe we just want to find the address of the user with id: 1
         -db.users.find({_id:1}, {address: 1})  the "1" after means include the field...0 means to exclude the field. 
 
-
-
-
+Update:
+  -To update data we use the .updateOne() method 
+    -we specify the document with our first argument ({_id: 1})  <-- document w/id 1
+    -the second argument will specify the value we want to change ({_id: 1}, {$set: {stock: 32}})...we use the "$set" keyword 
+  -
 
 
 */
