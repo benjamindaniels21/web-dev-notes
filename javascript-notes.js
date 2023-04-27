@@ -1224,7 +1224,9 @@ Relationships:
       }
 
 
-
+Using MongoDB with node: 
+  -Using an ODM (object data modeling) library like Mongoose is the most common way to use MongoDB within a node app
+  -Mongoose makes life much easier  
 
 
 
