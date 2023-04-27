@@ -1209,7 +1209,19 @@ Delete:
     -to delete ALL documents within a collection, just pass an empty object into the .deleteMany()
       -Ex: db.products.deleteMany({})  <-- deletes ALL documents within the products collection 
 
-
+Relationships: 
+  -To create a relationship between two collections you can embed data within a document.
+    -Ex: if we had a person document we could embed address data inside of that document.
+      -{
+        _id: 1,
+        name: "Joe Smith",
+        address: {
+          street: "123 Fake St.",
+          city: "Cape Fear",
+          state: "MO",
+          zip: 12345
+        }
+      }
 
 
 
