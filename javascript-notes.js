@@ -1195,6 +1195,7 @@ Read:
     -This tells us which fields to include in the results
         -Maybe we just want to find the address of the user with id: 1
         -db.users.find({_id:1}, {address: 1})  the "1" after means include the field...0 means to exclude the field. 
+        -We can use this to only return the data necessary to our search
 
 Update:
   -To update a document we use the .updateOne() method 
@@ -1227,8 +1228,6 @@ Relationships:
 Using MongoDB with node: 
   -Using an ODM (object data modeling) library like Mongoose is the most common way to use MongoDB within a node app
   -Mongoose makes life much easier  
-
-
 
 
 
