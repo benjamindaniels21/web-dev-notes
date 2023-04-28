@@ -1225,6 +1225,22 @@ Relationships:
           zip: 12345
         }
       }
+  Nested Documents: 
+    -The value of a field can be a nested document 
+      - {
+        title: "Prisoner of Azkaban",
+        genres: ["fantasy", "young adult"],
+        reviews: [
+          {
+            name: "Ben",
+            body: "lorem ipsum"
+          },
+            {
+            name: "Greta",
+            body: "lorem ipsum"
+          }
+        ]
+      }
 
 Method Chaining
   -We can add methods to our searches. 
