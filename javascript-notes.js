@@ -1226,7 +1226,18 @@ Relationships:
         }
       }
 
+Method Chaining
+  -We can add methods to our searches. 
+      -Let's say we want to look into our books collection and return the total number of books:
+        -db.books.find().count() <--- returns # of book documents in our collection
 
+    .limit()
+      -you can pass in a number to limit the amount of documents returned. 
+          .limit(3) will return three documents
+
+    .find().sort({field: 1 (sort ascending) or -1(sort descending)})
+    -Ex: finds documents in collection and sorts them in an order according to a field.  
+        
 Using MongoDB with node: 
   -Using an ODM (object data modeling) library like Mongoose is the most common way to use MongoDB within a node app
   -Mongoose makes life much easier  
