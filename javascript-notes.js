@@ -1196,6 +1196,8 @@ Read:
         -Maybe we just want to find the address of the user with id: 1
         -db.users.find({_id:1}, {address: 1})  the "1" after means include the field...0 means to exclude the field. 
         -We can use this to only return the data necessary to our search
+    -You can keep the first argument empty to return all the documents in the collection, but add second arguments to filter out the bits of info that you don't care about
+        -Ex: You have a list of books, you want to return all the books, but you only want the title and author fields.
 
 Update:
   -To update a document we use the .updateOne() method 
