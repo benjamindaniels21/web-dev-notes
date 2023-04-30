@@ -1241,7 +1241,8 @@ Relationships:
           }
         ]
       }
-
+    -The benefits include speeding up read times because it might make it so you don't have to make an entire new collection
+    -
 Method Chaining
   -We can add methods to our searches. 
       -Let's say we want to look into our books collection and return the total number of books:
