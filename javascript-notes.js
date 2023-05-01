@@ -1254,10 +1254,22 @@ Method Chaining
 
     .find().sort({field: 1 (sort ascending) or -1(sort descending)})
     -Ex: finds documents in collection and sorts them in an order according to a field.  
-        
+
+-Complex queries 
+  -use the $ to perform a query
+  -db.collection.find({rating: {$gt: 7}}) <---all ratings greater than 7
+  -db.collection.find({rating: {$lt: 7}}) <---all ratings less than 7
+  -$lte <-- less than or equal
+  -$gte <-- greater than or equal
+  -
+
+    
+
 Using MongoDB with node: 
   -Using an ODM (object data modeling) library like Mongoose is the most common way to use MongoDB within a node app
   -Mongoose makes life much easier  
+
+
 
 
 
