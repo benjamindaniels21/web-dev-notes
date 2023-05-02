@@ -1269,6 +1269,14 @@ Method Chaining
     -db.books.find({rating:{$in: [7,8,9]}}) <--book with rating of 7, 8, or 9
   -$nin means "not in"
     -db.books.find({rating: {$nin: [7,8,9]}}) <--book with rating that isn't 7, 8, or 9
+Query array values: 
+  -To query a document that has a field that is an array:
+      -db.books.find({genres: "fantasy"}) <--look in genres and see if there is a match
+        -This doesn't mean that "fantasy" is the only thing in the array...but if it's in the array at all it will return the document to us
+  -What if you want an exact match? 
+      -db.books.find({genres: ["magic"]})  
+        -This returns books that ONLY have the genre of magic and no other values 
+
 
     
   
