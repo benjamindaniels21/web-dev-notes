@@ -1257,12 +1257,21 @@ Method Chaining
 
 -Complex queries 
   -use the $ to perform a query
-  -db.collection.find({rating: {$gt: 7}}) <---all ratings greater than 7
-  -db.collection.find({rating: {$lt: 7}}) <---all ratings less than 7
-  -$lte <-- less than or equal
-  -$gte <-- greater than or equal
-  -
+    -db.collection.find({rating: {$gt: 7}}) <---all ratings greater than 7
+    -db.collection.find({rating: {$lt: 7}}) <---all ratings less than 7
+    -$lte <-- less than or equal
+    -$gte <-- greater than or equal
+  -Multiple queries: 
+      -db.books.find(rating: {$gt: 7}, author: "JK Rowling") <-- all books above 7 rating whose author is JK Rowling
+  -db.books.find({$or: [{rating: 7}, {rating: 9}]}) 
+      -the $or works like || in JS...it will return all books with rating of 7 OR 9
+  -$in means "in"
+    -db.books.find({rating:{$in: [7,8,9]}}) <--book with rating of 7, 8, or 9
+  -$nin means "not in"
+    -db.books.find({rating: {$nin: [7,8,9]}}) <--book with rating that isn't 7, 8, or 9
 
+    
+  
     
 
 Using MongoDB with node: 
