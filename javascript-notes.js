@@ -1293,7 +1293,9 @@ Using MongoDB with node:
 
 -Render method only returns a single element 
       -ReactDOM.render(<h1>Hello!</h1>, document.getElementById("root"));
-
+  -We use a <div> to use multiple JSX Components
+      -These are "children" of the main element
+-
 
 
 
