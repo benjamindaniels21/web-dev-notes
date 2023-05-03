@@ -1287,9 +1287,12 @@ Using MongoDB with node:
   -Mongoose makes life much easier  
 
 
+*************************
+----------React-----
+*************************
 
-
-
+-Render method only returns a single element 
+      -ReactDOM.render(<h1>Hello!</h1>, document.getElementById("root"));
 
 
 
