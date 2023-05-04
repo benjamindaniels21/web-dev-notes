@@ -1323,6 +1323,15 @@ Problem to Solve:
       return returnVal;
     }
 
+    This can be simplified...
+      - const linearSearch = (arr, val) => {
+        for(let i = 0; i<arr.length; i++){
+          if(arr[i] === val){
+            return i;
+          }
+        }
+        return -1 // this is if we DON'T find a match. 
+      }
 
 
 
@@ -1331,5 +1340,4 @@ Problem to Solve:
 
 
 
-    
       */
