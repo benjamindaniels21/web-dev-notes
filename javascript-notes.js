@@ -1295,7 +1295,9 @@ Using MongoDB with node:
       -ReactDOM.render(<h1>Hello!</h1>, document.getElementById("root"));
   -We use a <div> to use multiple JSX Components
       -These are "children" of the main element
--
+-To use JS inside React
+  -Use the {} to write JS inside of JSX.
+  -You can declare variables outside of some JSX and then inject those values into JSX using curly braces 
 
 
 
