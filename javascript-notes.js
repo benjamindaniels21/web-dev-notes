@@ -1300,6 +1300,28 @@ Using MongoDB with node:
   -You can declare variables outside of some JSX and then inject those values into JSX using curly braces 
 
 
+*************************
+------Algo Practice-----
+*************************
+
+Linear Search:
+  -Go through an array of elements one by one to see if an element exists 
+
+Problem to Solve: 
+
+  Linear Search Exercise
+  Write a function called linearSearch which accepts an array and a value, and returns the index at which the value exists. If the value does not exist in the array, return -1.
+
+  My Solution:
+    const linearSearch = (arr, number) =>{
+    let returnVal = -1;
+    for(let i = 0; i<arr.length; i++){
+        if (arr[i] === number){
+          returnVal = i;
+          } 
+      }
+      return returnVal;
+    }
 
 
 
@@ -1309,10 +1331,5 @@ Using MongoDB with node:
 
 
 
-
-
-
-
-
-
+    
       */
