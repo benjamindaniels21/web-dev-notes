@@ -1333,7 +1333,14 @@ Problem to Solve:
         return -1 // this is if we DON'T find a match. 
       }
 
+Binary Search: 
+  -Works on sorted arrays only! 
+    -Takes an array...looks at the halfway point...checks how that value compares to our searching criteria...and continues to divide in half 
 
+    -Ex: Let's say we've got an array of numbers from 1 - 1000 and we want to see if the number 600 is inside it. 
+      -With linear search you'd have to perform 599 searches to get to the desired number 
+      -With binary search we immediately start at the halfway point (500) and see if the halfway point (500) is greater than or less than our input number of 600
+      -This will dramatically decrease the amount of searches we need to perform to find our input number 
 
 
 
