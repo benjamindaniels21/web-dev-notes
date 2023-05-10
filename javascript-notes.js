@@ -1324,7 +1324,7 @@ Using MongoDB with node:
             <OurComponent name = {namesArray[0]} />  <--- receives its value from an array of names
 -Wrapper Components
   -If you have a component that is going to wrap another then you need to pass it {props.children} in order for it to work properly
-      
+      -This happens often for Card components 
 
 *************************
 ------Algo Practice-----
