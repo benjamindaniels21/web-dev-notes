@@ -1322,6 +1322,8 @@ Using MongoDB with node:
         -This is an example of passing a hard coded value as props --> "Ben" , but the data could come from an array or some other place 
           Ex: 
             <OurComponent name = {namesArray[0]} />  <--- receives its value from an array of names
+-Wrapper Components
+  -If you have a component that is going to wrap another then you need to pass it {props.children} in order for it to work properly
       
 
 *************************
