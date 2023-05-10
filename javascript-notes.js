@@ -1299,6 +1299,27 @@ Using MongoDB with node:
   -Use the {} to write JS inside of JSX.
   -You can declare variables outside of some JSX and then inject those values into JSX using curly braces 
 
+-Passing Props to a component
+  -In the parent of a component we can pass down attributes to that component through props
+  -So let's say we have all of our components being rendered in our parent App.js:
+      const App = () => {
+        return(
+          <OurComponent />
+        )
+      }
+        -In the component we can pass down properties by setting them in the component:
+
+        <OurComponent name = "Ben" />   <---- Now we're passing the value "Ben" to the component through the name property
+
+        -In the component we need to receive these props: 
+
+          const OurComponent = (props) => {
+        return(
+          <h1>{props.name}</h1>  <---- this will receive the value "Ben" because it's been passed through via props
+        )
+      }
+
+      
 
 *************************
 ------Algo Practice-----
@@ -1345,6 +1366,6 @@ Binary Search:
 
 
 
-
+ 
 
       */
