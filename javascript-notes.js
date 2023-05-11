@@ -1326,6 +1326,10 @@ Using MongoDB with node:
   -If you have a component that is going to wrap another then you need to pass it {props.children} in order for it to work properly
       -This happens often for Card components 
 
+-Component Organization
+  -Try to organize components into folders based on their function within an app 
+      -Maybe some components are UI based where others may contain more of the logic of the app, so create folders for each if possible. 
+
 *************************
 ------Algo Practice-----
 *************************
