@@ -1352,6 +1352,13 @@ Using MongoDB with node:
         -Later we can call the setTitle("Updated Title") and it will rerender the component with the new value. 
   -React will keep track of the updates to the state and will only use the passed in value to useState the FIRST TIME 
 
+-Changing State
+  -State can be changed for a variety of reasons:
+      -user inputs something so we want to update the UI
+      -http request resolved so we want to display some data
+      -etc.
+
+
 -Hooks
   -Call them within the functional component
 
