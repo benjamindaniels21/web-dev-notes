@@ -1345,6 +1345,12 @@ Using MongoDB with node:
       -It looks like this: 
         - const [something, setSomething] = useState(); <---here we're destructuring this array because useState is an array with 2 values always in this order
           -We use the convention of [something, setSomething] in our destructuring 
+      -When we want to update the component we use the updating function...setSomething() and pass a new value to it.
+
+      Ex:
+        - const [title, setTitle] = useState(props.title) <--- the value we pass to useState will be the initial value.
+        -Later we can call the setTitle("Updated Title") and it will rerender the component with the new value. 
+  -React will keep track of the updates to the state and will only use the passed in value to useState the FIRST TIME 
 
 -Hooks
   -Call them within the functional component
