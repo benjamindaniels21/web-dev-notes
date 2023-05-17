@@ -1330,6 +1330,26 @@ Using MongoDB with node:
   -Try to organize components into folders based on their function within an app 
       -Maybe some components are UI based where others may contain more of the logic of the app, so create folders for each if possible. 
 
+-State
+  -Since components are just functions, when you invoke a component it's like calling a function. 
+    -IF that component has other child components, then the same happens with them and we return whatever they return
+      -Once this is all done, React draws the info on the screen. 
+ -If we need to update the screen in some way we need to use State to update a component and rerender it. 
+
+-useState
+ -This is a function that is included with React
+    -it's called a "hook"
+      -all hooks start with the word "use"
+    -We make a special variable inside of it.
+    -We initialize it with an array of two values...the first is the initial value and the second is an updating function
+      -It looks like this: 
+        - const [something, setSomething] = useState(); <---here we're destructuring this array because useState is an array with 2 values always in this order
+          -We use the convention of [something, setSomething] in our destructuring 
+
+-Hooks
+  -Call them within the functional component
+
+
 *************************
 ------Algo Practice-----
 *************************
