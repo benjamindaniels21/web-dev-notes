@@ -1358,6 +1358,15 @@ Using MongoDB with node:
       -http request resolved so we want to display some data
       -etc.
 
+-When State Relies on Previous State
+  -When your state relies on the previous state of the component do not just pass in the values to the updating function directly. 
+      -Don't do this:
+          setAmount(amount + 1)
+  -When you need to update state this way pass in a function to the updater
+      -Like this: 
+         setAmount((prevState) => {
+          prevState + 1; 
+         })
 
 -Hooks
   -Call them within the functional component
