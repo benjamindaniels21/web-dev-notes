@@ -1368,6 +1368,10 @@ Using MongoDB with node:
           prevState + 1; 
          })
 
+-Passing state up
+  -This is possible!     
+  -In order to pass state up to a parent you need to put the logic in the parent component and use props in the child component to call the function that is housed in the parent component.   
+
 -Hooks
   -Call them within the functional component
 
