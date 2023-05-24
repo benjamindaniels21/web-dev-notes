@@ -1375,7 +1375,11 @@ Using MongoDB with node:
 -Controlled Component
   -When one component is reliant on logic within a parent component. It's being controlled by another component. 
 
-
+-Stateless vs. Stateful (dumb vs. smart) Components
+  -Some components will manage state. 
+  -Others will not. They'll just present something 
+  -We want mostly stateless components and keep each component very simple and straightforward. 
+  -Typically only a few components actually need state. 
 
 -Hooks
   -Call them within the functional component
