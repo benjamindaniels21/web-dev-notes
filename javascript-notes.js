@@ -1393,6 +1393,17 @@ Using MongoDB with node:
             -The expression before the "?" will evaluate as true or false...if it's true then the first item before the colon will happen, if it's false, the second item will happen.
               -So here if the length of expenses is zero, then we'll get a message saying "nothing to show", otherwise we'll show our component.
 
+  -An alternative to the ternary operator is to use the && which will only render the stuff afterwards if the condition is met. This will allow you to have less complicated statements that are hard to read.
+         -Ex:
+         {filteredExpenses.length === 0 && <p>Nothing to Show</p>} <---only displays if condition is met
+         {filteredExpenses.length > 0 && <Component />} <---only displays if condition is met
+         
+
+
+
+
+
+         
 *************************
 ------Algo Practice-----
 *************************
