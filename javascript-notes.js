@@ -1398,12 +1398,24 @@ Using MongoDB with node:
          {filteredExpenses.length === 0 && <p>Nothing to Show</p>} <---only displays if condition is met
          {filteredExpenses.length > 0 && <Component />} <---only displays if condition is met
          
+  -You can ALSO put all of the logic above the return statement and set it to a JS variable that returns JSX and inside the return point to that variable
+         -Ex: 
+            let expensesContent = <p>Nothing to show</p>
+            if (filteredExpenses.length > 0){
+              expensesContent = filteredExpenses.map(expense => (
+                <ExpenseItem name={expense.name}/>
+              ))
+            }
+
+            return (
+              {expensesContent}
+            )
 
 
 
 
 
-         
+
 *************************
 ------Algo Practice-----
 *************************
