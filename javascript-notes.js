@@ -1385,6 +1385,14 @@ Using MongoDB with node:
   -Call them within the functional component
 
 
+
+-Conditional Rendering
+  -We can wrap some JS in curly braces in the return statement of the Component and use a ternary operator
+      -Ex: 
+         {filteredExpenses.length === 0 ? <p>Nothing to Show</p> : <ComponentToDisplay />}
+            -The expression before the "?" will evaluate as true or false...if it's true then the first item before the colon will happen, if it's false, the second item will happen.
+              -So here if the length of expenses is zero, then we'll get a message saying "nothing to show", otherwise we'll show our component.
+
 *************************
 ------Algo Practice-----
 *************************
