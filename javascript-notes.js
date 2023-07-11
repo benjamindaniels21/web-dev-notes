@@ -1411,10 +1411,16 @@ Using MongoDB with node:
               {expensesContent}
             )
 
+*************************
+------CSS Modules-----
+*************************
+-A way to create custom stylings for a react component so that no other components will get the wrong styles applied
+    -Ex: if you have a ".button" class that you want to apply to a component you can just add it to the component and import a .module.css file and a custom, distinct class will be applied
+      -This allows you to use the same class name in multiple components without fear of the classes overlapping 
 
-
-
-
+-To use CSS module you have to create a .module.css file and import it. 
+  -Create React App automatically allows use of CSS modules
+      -Make sure to check for compatibility 
 
 *************************
 ------Algo Practice-----
