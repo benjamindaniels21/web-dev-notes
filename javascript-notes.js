@@ -1465,8 +1465,24 @@ Binary Search:
       -This will dramatically decrease the amount of searches we need to perform to find our input number 
 
 
+*************************
+------Static Arrays-----
+*************************
+
+ -Static arrays are of fixed size. 
+ -You cannot add new values to static arrays
+ -You can remove values, though
+ -These are ordered arrays where each value has an index. 
+
+-To insert a value into a static array you end up shifting the previous values of the array. 
+      -Ex: if we have an array that is three elements long ... [5,6,7] and we remove the last element ... [5,6,[removed]] and we want to insert
+      a 4 into that array in such a way that the elements all stay in numerical order it means that the values 5 and 6 need to be shifted over 
+      by one index. 
+      -The shifting would have to happen FIRST before inserting the new value into the array. 
+        -This isn't too much of a problem if the array is small...but if it's a large array then the "Big O" becomes less performant
+          -It's an O(n). <--- Linear Time
+        -Adding to the end of an array is way more performant like O(1) <---constant time. 
 
 
- 
 
-      */
+ */
