@@ -1483,6 +1483,13 @@ Binary Search:
           -It's an O(n). <--- Linear Time
         -Adding to the end of an array is way more performant like O(1) <---constant time. 
 
+*************************
+------Pointers-----
+*************************
+
+-A pointer is an object that stores a value
+-A pointer is helpful in many algorithms...frequently we need to keep track of values in order to check if some set of circumstances are true. 
+  -When we iterate through an array we are looking at each value...so we have a pointer there looking at each value. 
 
 
  */
