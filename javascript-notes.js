@@ -1406,7 +1406,7 @@ Using MongoDB with node:
                 <ExpenseItem name={expense.name}/>
               ))
             }
-
+            
             return (
               {expensesContent}
             )
@@ -1464,7 +1464,6 @@ Binary Search:
       -With binary search we immediately start at the halfway point (500) and see if the halfway point (500) is greater than or less than our input number of 600
       -This will dramatically decrease the amount of searches we need to perform to find our input number 
 
-
 *************************
 ------Static Arrays-----
 *************************
@@ -1483,6 +1482,20 @@ Binary Search:
           -It's an O(n). <--- Linear Time
         -Adding to the end of an array is way more performant like O(1) <---constant time. 
 
+
+*************************
+------Dynamic Arrays-----
+*************************
+
+-A dynamic array doesn't have an initialized size. 
+  -In some languages an array will be initialized to a certain size even if there aren't values inside of it. 
+-Pushing to an array increases its size and adds element to end of array.  
+-Popping will remove the last element. 
+-When we add a value to an array we actually are creating a new array in memory so the array elements can be stored contiguously in memory. 
+  -When the new array is created we deallocate the memory for the old version of the array. 
+  -When new values are added the size of the array is actually doubled, giving us extra room if needed.
+    -Why is the size doubled? When we create a new array it's O(n) but if we add to the new array it's O(1).
+
 *************************
 ------Pointers-----
 *************************
@@ -1490,6 +1503,7 @@ Binary Search:
 -A pointer is an object that stores a value
 -A pointer is helpful in many algorithms...frequently we need to keep track of values in order to check if some set of circumstances are true. 
   -When we iterate through an array we are looking at each value...so we have a pointer there looking at each value. 
-
+-Sometimes we may want to have multiple pointers 
+  -Maybe we're looking at both ends of an array at the same time...here we'd need to keep track of the first AND last values of the array so we'd need two pointers.
 
  */
