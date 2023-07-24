@@ -1496,6 +1496,13 @@ Binary Search:
   -When new values are added the size of the array is actually doubled, giving us extra room if needed.
     -Why is the size doubled? When we create a new array it's O(n) but if we add to the new array it's O(1).
 
+*******************************
+------Array Time Complexity-----
+********************************
+Read/Write the xth element: O(1)
+Insert or Remove last element: O(1)
+Insert or Remove middle element: O(n)  <---- this one involves shifting elements...hence it takes more time
+
 *************************
 ------Pointers-----
 *************************
