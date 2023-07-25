@@ -1423,6 +1423,33 @@ Using MongoDB with node:
       -Make sure to check for compatibility 
 
 *************************
+------JSX Limitations-----
+*************************
+
+-You can only have ONE root JSX element. 
+  -Why we wrap everything in a single element (usually a div).
+  -In JS we can only return one thing! 
+      -We can't have two separate return statements. 
+      -You could have an array, or an object, or some more complex data structure, but ultimately it's just one thing returned.
+  -You could put all of your components inside of an array that you return, but if you do that then React is going to ask that each component/element returned have an associated key. 
+    -Like when you map through an array and return JSX elements. 
+Problem with wrapping divs: 
+  -You can end up with "Div Soup".
+    -When you're actually converting the JSX down it can make for TONS of unnecessary divs.
+
+    <div>
+      <div>
+        <div>
+          <div>
+            <h2>Hello, World</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+*************************
 ------Algo Practice-----
 *************************
 
