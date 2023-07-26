@@ -1462,9 +1462,25 @@ Problem with wrapping divs:
     <React.fragment></React.fragment>
   
 *************************
------- -----
+------React Portals-----
 *************************
+-Let's say we have a modal that we want to use. 
+  -A modal, by nature should sit on TOP of everything on the page when it is active.
+  -This means that when a modal is triggered we would want it to sit semantically ABOVE everything in the rendered HTML.
+  -If we had a component that rendered a modal, it could very easily cause the modal to not sit on top of the rest of the components, but next to them. 
 
+-Portals are used to put a component in a specific place on the place
+
+-To use one, go into the root HTML file, make a div where you want the component to be in the page's structure, and give it and id (like 'backdrop-root')
+  -to portal, we import ReactDOM and in our component we can do something like this:
+
+    const ErrorModal = (props) => {
+      return (
+        <> 
+          {ReactDOM.createPortal(<Backdrop />, document.getElementById('backdrop-root'))}
+        </>
+      )
+    }
 
 *************************
 ------Algo Practice-----
