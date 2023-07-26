@@ -1446,8 +1446,25 @@ Problem with wrapping divs:
         </div>
       </div>
     </div>
+  
+  Problems:
+  -These divs have no semantic meaning...it doesn't make any sense. 
+  -You're rendering stuff that doesn't need to happen...makes things slower
 
-    
+  Solutions: 
+  -Create a Wrapper Component
+    -Make a component that only serves to wrap a component that just returns 
+    props.children
+  -Use a react fragment
+    -This is just an empty opening and closing bracket
+    <> </>
+    -If it doesn't work you can also use 
+    <React.fragment></React.fragment>
+  
+*************************
+------ -----
+*************************
+
 
 *************************
 ------Algo Practice-----
