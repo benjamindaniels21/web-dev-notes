@@ -1482,6 +1482,34 @@ Problem with wrapping divs:
       )
     }
 
+
+*************************
+------React Refs-----
+*************************
+
+-A ref allow us to get access to DOM elements 
+-To use it: const somethingHere = useRef();
+    -They have an undefined initial value 
+    -Add the "ref" prop to the html element you want to wire up 
+      -Let's say it's an input element: 
+
+          const nameInputRef = useRef();
+          
+          <input id="username" type= "text" value={enteredUsername} ref={nameInputRef}/>
+
+      -This will return an object with a bunch of properties...like the "current" property 
+        -Inside 'current' we have a 'value' property.
+      -so if we were to console.log(nameInputRef.current.value) we'd get the current value of that input without having to rerender the element at every keystroke. 
+
+-Why do we use this? 
+  -They allow us to store values without causing a rerender 
+  -useState() causes the component to rerender, which can decrease speed.
+
+
+
+
+
+
 *************************
 ------Algo Practice-----
 *************************
