@@ -1505,8 +1505,14 @@ Problem with wrapping divs:
   -They allow us to store values without causing a rerender 
   -useState() causes the component to rerender, which can decrease speed.
 
+*************************************************
+------Controlled vs Uncontrolled Components-----
+*************************************************
 
+-Uncontrolled components manage their own internal state. They're not dependent on another component to manage their state.
 
+-Controlled components have their state and behavior controlled by the parent component (using props).
+  -Maybe there is a component that receives props to manage an input's value upon form submission. 
 
 
 
