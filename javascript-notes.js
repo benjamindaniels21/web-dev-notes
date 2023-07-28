@@ -1515,6 +1515,21 @@ Problem with wrapping divs:
   -Maybe there is a component that receives props to manage an input's value upon form submission. 
 
 
+*************************
+------Side Effects-------
+*************************
+-React's job is to render the UI and update the UI when the user interacts with the application
+
+-A side effect is anything happening outside of this functionality. 
+  -Rendering an HTTP request
+  -Calls to an API 
+  -Timers 
+
+
+
+*************************
+------ -----
+*************************
 
 *************************
 ------Algo Practice-----
