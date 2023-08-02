@@ -1527,6 +1527,10 @@ Problem with wrapping divs:
 
 -All of these things arent directly related to drawing something on the screen. 
 
+-Tasks that happen outside of the component function may need to be taken into account. 
+  -If state changes, that causes the component to re run, which would in turn trigger the side effect if it's inside of the function body. 
+
+
 *************************
 ------ -----
 *************************
