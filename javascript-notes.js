@@ -1530,10 +1530,23 @@ Problem with wrapping divs:
 -Tasks that happen outside of the component function may need to be taken into account. 
   -If state changes, that causes the component to re run, which would in turn trigger the side effect if it's inside of the function body. 
 
+-It's easy to accidentally create infinite loops or unintended HTTP requests
+
 
 *************************
------- -----
+------useEffect-----
 *************************
+
+useEffect(() => {...}, [ dependencies ])  <--- looks like this in use
+
+Called with two arguments 
+  -First is a function that is ran if the specified dependencies change. 
+  -Second is the dependencies that you want to use to trigger your function 
+
+This allows useEffect() to only run when the dependencies change and NOT WHEN THE COMPONENT RE-RENDERS 
+
+
+
 
 *************************
 ------Algo Practice-----
