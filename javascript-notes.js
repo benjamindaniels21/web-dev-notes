@@ -1525,7 +1525,7 @@ Problem with wrapping divs:
   -Calls to an API 
   -Timers 
 
-
+-All of these things arent directly related to drawing something on the screen. 
 
 *************************
 ------ -----
