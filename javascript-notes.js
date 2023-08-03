@@ -1545,7 +1545,7 @@ Called with two arguments
 
 This allows useEffect() to only run when the dependencies change and NOT WHEN THE COMPONENT RE-RENDERS 
 
-
+If the dependencies array is empty, useEffect will only run the first time that the component renders. 
 
 
 *************************
