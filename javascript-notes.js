@@ -1547,6 +1547,9 @@ This allows useEffect() to only run when the dependencies change and NOT WHEN TH
 
 If the dependencies array is empty, useEffect will only run the first time that the component renders. 
 
+**You do not need to add state updating functions as dependencies (React guarantees those never change, so they don't need to be added as dependencies)
+**You don't need to add built in APIs or functions like fetch or localStorage
+
 
 *************************
 ------Algo Practice-----
