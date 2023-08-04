@@ -1554,6 +1554,18 @@ If the dependencies array is empty, useEffect will only run the first time that 
 **You do not need to add state updating functions as dependencies (React guarantees those never change, so they don't need to be added as dependencies)
 **You don't need to add built in APIs or functions like fetch or localStorage
 
+*************************
+------Debouncing-----
+*************************
+-Programming practice that makes sure time consuming tasks don't fire so often. 
+
+-For example: You're checking if a password/username is valid. Instead of checking on every keystroke you could wait for the pause that happens once a user stops typing for a few seconds. 
+  -This will make the page faster because you're invoking a function less. 
+
+
+
+
+
 
 *************************
 ------Algo Practice-----
