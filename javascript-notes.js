@@ -1357,6 +1357,10 @@ Using MongoDB with node:
       -user inputs something so we want to update the UI
       -http request resolved so we want to display some data
       -etc.
+      -React checks the DOM nodes when state is changed and updates the appropriate nodes. 
+      -If there are things within the component that haven't changed then they'll stay the same.
+        -If you have a button that requires state changes, but an input that doesn't...the input will allow you to keep typing inside without refreshing its value once the button is clicked
+
 
 -When State Relies on Previous State
   -When your state relies on the previous state of the component do not just pass in the values to the updating function directly. 
