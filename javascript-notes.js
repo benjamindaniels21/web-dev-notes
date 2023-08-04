@@ -1554,6 +1554,18 @@ If the dependencies array is empty, useEffect will only run the first time that 
 **You do not need to add state updating functions as dependencies (React guarantees those never change, so they don't need to be added as dependencies)
 **You don't need to add built in APIs or functions like fetch or localStorage
 
+We can also have a "cleanup function" in our useEffect().
+  -Looks like this: 
+
+  useEffect(() => {
+   console.log("this is useEffect");
+
+   return () => {console.log("This is the cleanup function")}
+  }, [])
+
+  -The cleanup function will NOT run on the first render. So we'd only get "this is useEffect". We're going to see the cleanup function AFTER that first render. So on every subsequent re-render. 
+
+
 *************************
 ------Debouncing-----
 *************************
