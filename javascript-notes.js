@@ -1575,6 +1575,19 @@ We can also have a "cleanup function" in our useEffect().
   -This will make the page faster because you're invoking a function less. 
 
 
+*************************
+------useReducer-----
+*************************
+
+-used for managing more complex state. 
+  -multiple states, multiple dependencies, etc. 
+
+-Can be used to replace useState
+  -Many times you'll just use useState, but in some situations it'll be better to use useReducer 
+
+-Example: 
+  We have an email input that also needs to be validated. 
+  We could definitely go the useState route and manage both pieces of state separately, but really these things are linked
 
 
 
