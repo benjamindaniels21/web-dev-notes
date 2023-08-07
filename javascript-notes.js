@@ -1590,6 +1590,16 @@ We can also have a "cleanup function" in our useEffect().
   We have an email input that also needs to be validated. 
   We could definitely go the useState route and manage both pieces of state separately, but really these things are linked
 
+How it works:
+
+const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc);
+
+-state = state snapshot used in the component re-render/evaluation cycle
+-dispatchFunct = A fn that can be used to dispatch a new action [i.e. trigger an update of the state]
+-reducerFunc = A funct that is triggered automatically once an action is dispatched (via dispatchFunct) -- it receives the latest state snapshot and should return the new, updated state. 
+    -It's like an updated form of useState 
+-initial state = the initial state (less important)
+-A function to set the initial state programmatically (less important)
 
 
 
