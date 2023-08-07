@@ -1581,6 +1581,7 @@ We can also have a "cleanup function" in our useEffect().
 
 -used for managing more complex state. 
   -multiple states, multiple dependencies, etc. 
+  -If you are updating state based on another state, it's helpful to use useReducer 
 
 -Can be used to replace useState
   -Many times you'll just use useState, but in some situations it'll be better to use useReducer 
