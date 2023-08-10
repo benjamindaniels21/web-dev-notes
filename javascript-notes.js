@@ -1602,6 +1602,16 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
 -A function to set the initial state programmatically (less important)
 
 
+*************************
+------Context API-----
+*************************
+
+-In some cases you'll pass down props through several components. 
+-This can be unnecessarily complex. 
+-For example: maybe you have an e-commerce website that requires a login in order to buy something. You'd want to be able to share that login state around the app (In the check out section, for example)
+  -There might not be a direct connection between two components. 
+    -one may not be the child of another 
+
 
 *************************
 ------Algo Practice-----
