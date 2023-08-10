@@ -1612,6 +1612,28 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
   -There might not be a direct connection between two components. 
     -one may not be the child of another 
 
+-Context is behind the scenes state storage
+-You use it by wrapping everything you want to have access to this state in a context component. 
+  -Create the component by using React.createContext() and export it so it can be imported in other files
+    -This function will hold your state 
+    - const AuthContext = React.createContext({     <---can call it anything, but i'm using "AuthContext" as an example
+      isLoggedIn: false 
+    })
+
+    -Then you'll wrap anything that you want to have access: 
+
+    const App = () => {
+
+      return (
+        <AuthContext.Provider value={{isLoggedIn: false}}
+          <Header/>
+          <Main/>
+          <Footer/>
+        </AuthContext.Provider>
+      )
+    }
+
+    -Now the Header, Main, and Footer components can consume that global state. 
 
 *************************
 ------Algo Practice-----
