@@ -1634,6 +1634,29 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
     }
 
     -Now the Header, Main, and Footer components can consume that global state. 
+    -To consume the state you can wrap the components that you want to use inside an <AuthContext.Consumer>
+
+
+*************************
+------useContext Hook-----
+*************************
+-This is the easiest way to use context. 
+-You import useContext at the top of the component file and then you can pass your context to the useContext hook: 
+  import {useContext} from 'react'
+  import MyContext from  './MyContext'
+  
+  const SomeComponent = () => {
+
+    const ctx = useContext(MyContext)
+
+    return (
+      {ctx.isLoggedIn}
+    )
+  }
+
+
+
+
 
 *************************
 ------Algo Practice-----
