@@ -1636,6 +1636,7 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
     -Now the Header, Main, and Footer components can consume that global state. 
     -To consume the state you can wrap the components that you want to use inside an <AuthContext.Consumer>
 
+    ***You should use Context when you're FORWARDING data through several components. 
 
 *************************
 ------useContext Hook-----
