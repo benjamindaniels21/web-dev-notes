@@ -1658,6 +1658,18 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
   }
 
 
+**********************************
+------Rules for React Hooks-----
+**********************************
+-You can only call hooks in React Functions 
+  -React component functions and custom hooks are used INSIDE the component function or custom hook
+-On call hooks at the top level.
+  -Don't call them in nested functions 
+  -Don't call them in block statements
+-useEffect always add everything you refer to inside of useEffect as a dependency. 
+  -if you refer to some setter function inside, then you should include it as a dependency so you only rerender when that data changes.
+
+
 
 
 
