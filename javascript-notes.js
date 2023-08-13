@@ -1764,4 +1764,35 @@ Insert or Remove middle element: O(n)  <---- this one involves shifting elements
 -Sometimes we may want to have multiple pointers 
   -Maybe we're looking at both ends of an array at the same time...here we'd need to keep track of the first AND last values of the array so we'd need two pointers.
 
+
+*************************
+------Linked Lists-----
+*************************
+
+-This data type has a value and a pointer 
+  -We create "nodes" when we're constructing a linked list. 
+  -These nodes are connected to one another through their pointers
+-Let's say we have 3 nodes with the values: "Red", "Green", and "Blue"
+  -These are currently unconnected nodes (not linked).
+-We can connect them by connecting them through their pointers 
+  -Ex: ListNode1.next = ListNode2 <--- Here the .next property points at the next list node
+-Connecting them via pointers allows the computer to store the date in a random order and we can access them in a sort of sequential order that we define. 
+  -Arrays, on the other hand, are stored in memory in the same way that we define them. 
+-To iterate through a linked list is going to be O(n) because as the size grows so does the time it takes to go through it. 
+-In a linked list we are keeping track of the head and the tail of the linked list. 
+  -First node and last node
+  -We can create pointers to keep track of where the head and the tail are 
+  - head = ListNode1
+  - tail = ListNode3 
+-If we wanted to add a node we could do this
+  - tail.next = ListNode4
+  OR we could do this
+  - tail = tail.next
+-Adding a node is O(1) or constant time 
+-Removing a node is also O(1) so long as we have access to the previous node
+  -If we have 3 nodes and we want to remove node 2 
+      -head.next = head.next.next <--points at the 3rd node
+      -Initially head.next points at node 2 and we set it to node 3
+      -Now node 1 points at node 3. 
+
  */
