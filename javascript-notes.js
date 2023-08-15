@@ -1742,6 +1742,7 @@ Binary Search:
 
   let firstStudent = new Student("Ben", "Daniels") <--we use the "new" keyword to create a new student object
   let secondStudent = new Student("Bill", "Daniels")
+
 -When we define the class it doesn't really do anything...it's just creating the blueprint to create the object. 
 -Inside of the constructor "this" refers to individual instance of the class. 
   -When we make a new student the constructor is saying THIS particular object will have a firstName property that gets it's value from the one passed into the function.
@@ -1755,6 +1756,21 @@ Binary Search:
       }
 
   -When we create a new student we will get an object with 3 properties: firstName, lastName, and grade...each with the values corresponding to the connections that we establish in the constructor function. 
+
+-Instance methods:
+  -These are methods that work on the individual instance of the class. 
+    -Our firstStudent, for example 
+       constructor(firstName, lastName, year){
+        this.firstName = firstName; 
+        this.lastName = lastName;
+        this.grade = year; 
+      } 
+      fullName(){
+        return `Your full name is ${this.firstName} ${this.lastName}`
+      }
+  
+  -If we run this method on firstStudent we'll get back: "Your full name is Ben Daniels" because that's what we passed into it. 
+
 
 *************************
 ------Static Arrays-----
