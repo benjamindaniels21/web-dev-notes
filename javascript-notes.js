@@ -1715,6 +1715,47 @@ Binary Search:
       -With binary search we immediately start at the halfway point (500) and see if the halfway point (500) is greater than or less than our input number of 600
       -This will dramatically decrease the amount of searches we need to perform to find our input number 
 
+
+*************************
+----Data Structures-----
+*************************
+-Data structures are collections of values, the relationships among them, and the functions/operations, that can be applied to them
+-Different DS excel at different things, some are specialized, others (like arrays) are more generally used. 
+-The more you code the more likely you'll need to use one of these DS
+
+*************************
+----Class Syntax-----
+*************************
+-In ES2015 Javascript created a class keyword to better support object oriented programming (OOP)
+-What is a class? 
+      -A blueprint for creating objects with predefined properties and methods 
+      -JS doesn't REALLY have classes...it's not really object oriented. 
+        -Class syntax just makes it easier to define class like structures 
+      -classes are actually special functions 
+-The class keyword: 
+  class Student {    <---- use uppercase 
+    constructor(firstName, lastName){
+      this.firstName = firstName; 
+      this.lastName = lastName;
+    }
+  }
+
+  let firstStudent = new Student("Ben", "Daniels") <--we use the "new" keyword to create a new student object
+  let secondStudent = new Student("Bill", "Daniels")
+-When we define the class it doesn't really do anything...it's just creating the blueprint to create the object. 
+-Inside of the constructor "this" refers to individual instance of the class. 
+  -When we make a new student the constructor is saying THIS particular object will have a firstName property that gets it's value from the one passed into the function.
+  -These don't have to match in name. 
+  -We could have a year parameter that we pass into the constructor and set it's value equal to the student's grade property
+
+      constructor(firstName, lastName, year){
+        this.firstName = firstName; 
+        this.lastName = lastName;
+        this.grade = year; 
+      }
+
+  -When we create a new student we will get an object with 3 properties: firstName, lastName, and grade...each with the values corresponding to the connections that we establish in the constructor function. 
+
 *************************
 ------Static Arrays-----
 *************************
