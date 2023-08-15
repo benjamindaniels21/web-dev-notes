@@ -1733,6 +1733,7 @@ Binary Search:
         -Class syntax just makes it easier to define class like structures 
       -classes are actually special functions 
 -The class keyword: 
+ 
   class Student {    <---- use uppercase 
     constructor(firstName, lastName){
       this.firstName = firstName; 
@@ -1770,6 +1771,30 @@ Binary Search:
       }
   
   -If we run this method on firstStudent we'll get back: "Your full name is Ben Daniels" because that's what we passed into it. 
+
+-Class Methods
+  -The static keyword defines a static method for a class. 
+  -These are called often to create utility functions for an application
+  
+  -Let's say on our Student class we could have a method that enrolls students. 
+    -This isn't related to the particular instance of the class (i.e. the individual student objects)
+
+  To use it: 
+
+  -add the "static" keyword and declare a function:
+
+      static enrollStudents() {
+        return "enrolling students"
+      }
+      
+  -This is not a method you can call on an instance: 
+   you can't do firstStudent.enrollStudents() <-- won't work! 
+
+  -You have to use this method on the class itself
+      Student.enrollStudents() <---this works because "Student" is the actual class.
+
+  -You can use the instances as parameters to a class method. 
+    -If you made a class that took in two points and had a class method that would calculate the distance between two points you could call that method with any points that you had made in order to get their distance apart. 
 
 
 *************************
