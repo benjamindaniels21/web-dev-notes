@@ -1851,6 +1851,27 @@ Insert or Remove middle element: O(n)  <---- this one involves shifting elements
 ------Linked Lists-----
 *************************
 
+-A linked list is a DS that is ordered [like an array]
+  -However an array has indices 
+  -A linked list does not. 
+-It has a head, a tail, and a length property
+-It's made up of nodes, each nodes has a value and a pointer to the next node. 
+
+Example: 4 -> 5 -> 6 -> null
+
+-It's just a list pointing to the next one. 
+-Like a skyscraper with no elevators...we have to go floor by floor 
+-The "singly" part means it only has a pointer pointing to the next node. 
+-If we want to search we have to go node by node 
+-REALLLLLY easy to insert into, because we just create a new node and make that node the new head
+  -Unlike an array where you'd need to shift every value into a new index. 
+-"head" is just a pointer
+-next is also a pointer
+-Random access is not allowed!
+
+
+
+
 -This data type has a value and a pointer 
   -We create "nodes" when we're constructing a linked list. 
   -These nodes are connected to one another through their pointers
@@ -1876,5 +1897,7 @@ Insert or Remove middle element: O(n)  <---- this one involves shifting elements
       -head.next = head.next.next <--points at the 3rd node
       -Initially head.next points at node 2 and we set it to node 3
       -Now node 1 points at node 3. 
+
+
 
  */
