@@ -1932,9 +1932,11 @@ class SinglyLinkedList{
         if(!this.head){    <---check if there is a head node already...if not then make the new node the head and the tail
             newHead = this.head;
             this.head = this.tail;
+        } else {  <--- only runs if there is already a head node. 
+            newHead.next = this.head; <---set the new node's next to the value of the head 
+            this.head = newHead  <---now actually set the new node as the head 
         }
-        newHead.next = this.head; <---set the new node's next to the value of the head 
-        this.head = newHead  <---now actually set the new node as the head 
+       
         this.length++; <--- increment the list 
         return this; <--- return the list
     }
