@@ -1670,6 +1670,17 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
   -if you refer to some setter function inside, then you should include it as a dependency so you only rerender when that data changes.
 
 
+**********************************
+------How does React work?-----
+**********************************
+
+
+
+
+
+
+
+
 
 
 
