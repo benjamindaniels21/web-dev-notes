@@ -1674,6 +1674,27 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
 ------How does React work?-----
 **********************************
 
+-React is a js library for building user interfaces
+-It's all about components 
+-React DOM is the interface to the web
+  -Components go to React DOM and that's what the user sees
+
+-Props: data from parent component
+-State: internal data
+-Context: component-wide data 
+
+-React tells React DOM what to render to the screen. 
+
+-Virtual DOM
+  -React looks at the component tree and then looks at the virtual DOM and updates a component if there are any changes
+  -Re-evaluating a component isn't the same as re-rendering the DOM
+    -Components re-evaluate when props, state, or context change
+  -The real DOM isn't always changed 
+  -React looks to see what exactly has changed so it only changes what is needed. This makes it much more performant. 
+  
+
+
+-State Management
 
 
 
