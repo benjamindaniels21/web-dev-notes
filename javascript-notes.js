@@ -1693,7 +1693,7 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
   -React looks to see what exactly has changed so it only changes what is needed. This makes it much more performant. 
   
 
-
+--bump
 -State Management
 
 
