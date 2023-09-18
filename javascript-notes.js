@@ -1691,7 +1691,12 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
     -Components re-evaluate when props, state, or context change
   -The real DOM isn't always changed 
   -React looks to see what exactly has changed so it only changes what is needed. This makes it much more performant. 
-  
+  -If the parent component function runs, so too will the child component functions! 
+    -This is true even if the child component doesn't itself have any changes...the parent component rerendering is enough to trigger a reevaluation of the child component
+    -This doesn't mean that it will trigger a change to the real DOM though
+      -Is this bad??
+        -Wouldn't this cause massive performance issues in a big app?
+      
 
 --bump
 -State Management
