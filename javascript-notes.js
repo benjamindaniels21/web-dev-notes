@@ -1705,9 +1705,12 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
 
 
 
+*************************
+------ Random Learning-----
+*************************
 
-
-
+.env files: these allow you to set "environment variables" in a plain text file and then reference them in other parts of your code. This is nice because it can allow you to hide bits of data that you don't want others to have access to, like API keys. 
+  you can use the dotenv package to manage these files.  
 
 
 *************************
