@@ -1711,6 +1711,8 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
 
 .env files: these allow you to set "environment variables" in a plain text file and then reference them in other parts of your code. This is nice because it can allow you to hide bits of data that you don't want others to have access to, like API keys. 
   you can use the dotenv package to manage these files.  
+  Some hosting platforms will have their own ways of hiding these files. 
+  when using github, use a .gitignore file to ignore your .env file so it doesn't get synced to your github
 
 
 *************************
