@@ -2017,6 +2017,6 @@ list.push("friend");
       -Initially head.next points at node 2 and we set it to node 3
       -Now node 1 points at node 3. 
 
-
+--bump
 
  */
