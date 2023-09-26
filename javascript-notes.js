@@ -1704,6 +1704,13 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
 ****************************
 
 -This is a way to prevent unwanted renders of the DOM
+-This only works for functional components 
+-memo tells react to look at the props a component receives and only to rerender IF the props changed. 
+-If the parent component changed, but the props for the child components didn't then those won't render again. 
+-Why shouldn't we use this on all components?
+  -This optimization comes at a cost...
+    -It makes react compare versions of the components which takes time.
+      -So sometimes if you have a component tree that has lots of child components and a parent that is getting rerendered...in this case memo can help out a lot! 
 
 
 
