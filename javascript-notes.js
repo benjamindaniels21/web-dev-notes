@@ -1700,19 +1700,33 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
 
 
 ****************************
-------React Memo-----
+------React.memo-----
 ****************************
 
 -This is a way to prevent unwanted renders of the DOM
 -This only works for functional components 
+-used on child components
 -memo tells react to look at the props a component receives and only to rerender IF the props changed. 
 -If the parent component changed, but the props for the child components didn't then those won't render again. 
 -Why shouldn't we use this on all components?
   -This optimization comes at a cost...
     -It makes react compare versions of the components which takes time.
       -So sometimes if you have a component tree that has lots of child components and a parent that is getting rerendered...in this case memo can help out a lot! 
+-The problem is that if the props contain objects they will no evaluate like we might think because objects are not primitive values in JS 
+  -Primitives are: numbers, strings, booleans, bigint, symbol, null, and undefined
+  -These will work when you compare them like: 
+    false === false  ---> returns true because we're comparing two primitive values
+    "hi" === "hi" ---> returns true
+    12 === 12 ---> returns true
+
+  -HOWEVER... [1,2,3] === [1,2,3] ---> returns false because an array is not a primitive value
 
 
+****************************
+------useCallback-----
+****************************
+-Stores a function across component executions 
+-This will 
 
 *************************
 ------ Random Learning-----
