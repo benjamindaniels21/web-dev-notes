@@ -1698,10 +1698,12 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
         -Wouldn't this cause massive performance issues in a big app?
       
 
---bump
--State Management
 
+****************************
+------React Memo-----
+****************************
 
+-This is a way to prevent unwanted renders of the DOM
 
 
 
