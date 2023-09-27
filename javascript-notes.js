@@ -1720,13 +1720,21 @@ const [state, dispatchFunction] = useReducer(reducerFunc, initialState, initFunc
     12 === 12 ---> returns true
 
   -HOWEVER... [1,2,3] === [1,2,3] ---> returns false because an array is not a primitive value
-
+    -This is because these two arrays point at different memory locations so they're not seen as being the same. 
 
 ****************************
 ------useCallback-----
 ****************************
 -Stores a function across component executions 
--This will 
+-This will evaluate the function versions like we want them to be evaluated...if nothing changes then we want the component to not rerender. 
+  -This is similar to having two arrays that point to the same place in memory: 
+    let arr1 = [1,2,3];
+    let arr2 = arr1; <--- this means they're both stored in the same memory location so JS evaluates them as the same. 
+
+-to use useCallback we wrap the func that we want to be evaluated and we also have to give it an array of dependencies (if needed), or we pass an empty array (like useEffect)
+
+
+
 
 *************************
 ------ Random Learning-----
