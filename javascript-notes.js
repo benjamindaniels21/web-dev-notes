@@ -2048,9 +2048,9 @@ list.push("friend");
       -Initially head.next points at node 2 and we set it to node 3
       -Now node 1 points at node 3. 
 
-*************************
+**********************************
 ------Iterating over an object-----
-*************************
+**********************************
 -You can't use a For...Of loop for an object, but if you use a For...In loop it will iterate over the object's keys! 
 
   const scores = {
@@ -2066,6 +2066,19 @@ list.push("friend");
 -Another way is to use the Object.keys method, and pass it your object 
   -Object.keys(scores) will return an array of all of the keys in that object
   -Object.values(scores) will return an array of all of the values in that object
+
+**********************************
+------AJAX-----
+**********************************
+-stands for async javascript and xml
+-Making requests behind the scenes 
+
+
+**********************************
+------Web APIs-----
+**********************************
+-APIs are an exposed endpoint that respond with data 
+-
 
 
 --bump
