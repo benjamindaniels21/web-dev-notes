@@ -2048,6 +2048,22 @@ list.push("friend");
       -Initially head.next points at node 2 and we set it to node 3
       -Now node 1 points at node 3. 
 
+*************************
+------Iterating over an object-----
+*************************
+-You can't use a For...Of loop for an object, but if you use a For...In loop it will iterate over the object's keys! 
+
+  const scores = {
+    Ben: 90,
+    Nick: 94,
+    Joe: 89
+  }
+
+  for (let name in scores) {
+    console.log(name);
+  }
+
+
 --bump
 
  */
