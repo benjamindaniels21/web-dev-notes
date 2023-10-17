@@ -2078,7 +2078,27 @@ list.push("friend");
 ------Web APIs-----
 **********************************
 -APIs are an exposed endpoint that respond with data 
--
+-They usually respond using JSON
+-Allow us to interact with a dataset 
+-Large companies, like Twitter, sometimes have APIs to interact with
+
+**********************************
+------JSON-----
+**********************************
+-A format that data will often come in 
+-It's based on JS syntax in the key/value pair...except now each key must be a double quoted string. 
+  -values can be strings, numbers, booleans, etc. 
+-JSON can be parsed into many different languages. 
+
+-In JS we use JSON.parse(data) where data is the json data sent to you. 
+  -This will allow us to work with JSON just like a regular object in JS
+
+-The opposite can happen...if we have a JS object and we need to send it as valid JSON we use the JSON.stringify(object)
+  -This will allow you to go from valid JS to valid JSON
+
+
+
+
 
 
 --bump
