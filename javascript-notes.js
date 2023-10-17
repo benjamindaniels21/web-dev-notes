@@ -2063,6 +2063,10 @@ list.push("friend");
     console.log(name);
   }
 
+-Another way is to use the Object.keys method, and pass it your object 
+  -Object.keys(scores) will return an array of all of the keys in that object
+  -Object.values(scores) will return an array of all of the values in that object
+
 
 --bump
 
