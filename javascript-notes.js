@@ -2096,7 +2096,11 @@ list.push("friend");
 -The opposite can happen...if we have a JS object and we need to send it as valid JSON we use the JSON.stringify(object)
   -This will allow you to go from valid JS to valid JSON
 
-
+**********************************
+------HTTP Header-----
+**********************************
+-Like metadata 
+-Tells us tons of extra information about the request 
 
 
 
