@@ -2101,7 +2101,38 @@ list.push("friend");
 **********************************
 -Like metadata 
 -Tells us tons of extra information about the request 
+-Sometimes APIs are going to ask us to send a certain type of header in order to interact with the data in certain ways
+  -An API might want you to tell it what format the data comes to you in (Html, JSON, etc.)
 
+**********************************
+------More about Fetch-----
+**********************************
+If you set up your fetch like this :
+
+fetch(url)
+  .then(res => {
+    console.log("success", res)
+  })
+  .catch(err => {
+    console.log('error', err)
+  })
+
+  the response (res) will likely not return any meaningful data, because it returns immediately after any headers are sent
+  So you'll likely just get a 'readable stream' in the body of the response. 
+
+We have to use res.json() to turn this into meaningful data...but this ALSO returns a promise so we have to add another .then in order
+to finally get to the actual data
+
+
+so like this: 
+
+fetch(url)
+  .then(res => {
+    res.json().then(data => console.log("Json done", data))
+  })
+  .catch(err => {
+    console.log('error', err)
+  })
 
 
 
