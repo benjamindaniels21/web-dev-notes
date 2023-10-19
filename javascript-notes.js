@@ -2134,6 +2134,20 @@ fetch(url)
     console.log('error', err)
   })
 
+  WE can refactor to this: 
+
+  fetch(url)
+  .then(res => {
+    return res.json()
+  })
+  .then((data) => {
+    console.log(data)
+  })
+  .catch(err => {
+    console.log('error', err)
+  })
+
+    this way everything is a little more "flat" and readable...you can see the steps that we go through better
 
 
 --bump
