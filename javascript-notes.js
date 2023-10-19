@@ -2168,7 +2168,41 @@ fetch(url)
 
 -Axios is a library for making http requests 
 -It makes fetch easier 
--
+-To use it on the front end, we include the cdn link in our html 
+
+-Then we can use it in our js file
+    -We use it like this:
+    axios.get(someUrl)
+      .then(res => {
+        console.log("response", res)
+      })
+      .catch(err => {
+        console.log("err", err)
+      })
+-This gets us data right away! 
+-We just need one .then because the axios.get returns a promise.
+
+-We can use async/await like this
+
+const starWarsPerson = async () => {
+  try{
+    const res =  await axios.get(swapiUrl);
+    console.log(res.data)
+  } catch (e) {
+    console.log("error", e)
+  }  
+}
+
+starWarsPerson(); <---we have to call the function 
+
+
+
+
+
+
+
+
+
 
 
 --bump
