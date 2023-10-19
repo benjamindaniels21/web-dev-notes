@@ -2150,6 +2150,18 @@ fetch(url)
     this way everything is a little more "flat" and readable...you can see the steps that we go through better
 
 
+    we can write this in an async way: 
+
+    const fetchReq = async () => {
+      try {
+      const res = await fetch(someUrl);
+      const data = await res.json();
+      console.log(data);
+      } catch (err) {
+        console.log("error!", err)
+      }
+    }
+
 --bump
 
  */
