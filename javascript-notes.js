@@ -2196,7 +2196,15 @@ const starWarsPerson = async () => {
 starWarsPerson(); <---we have to call the function 
 
 
-
+**************
+--Prototypes--
+**************
+-A prototype is a mechanism for object inheritance in JS
+  -So how things get properties from one another 
+-In MDN we see a bunch of array.prototype.SOMETHING
+-When we look an object in JS (which includes arrays...because arrays are also objects in JS) we can add methods to the object.
+  -However there are a bunch of built in methods for objects/arrays that we don't have to define each time. 
+    -Like .push() is an array method that we can use without having to define it for each array that we create. 
 
 
 
