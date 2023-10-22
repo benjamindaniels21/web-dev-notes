@@ -2206,6 +2206,7 @@ starWarsPerson(); <---we have to call the function
   -However there are a bunch of built in methods for objects/arrays that we don't have to define each time. 
     -Like .push() is an array method that we can use without having to define it for each array that we create. 
 
+-we can see __proto__ under the array or object when we inspect it we can see it has all of the built in methods there. 
 
 
 
