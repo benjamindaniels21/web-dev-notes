@@ -2257,10 +2257,29 @@ class Color { <-- again we capitalize
 const color1 = new Color(244, 233, 21)
 
 class Color { <-- again we capitalize
-  constructor(r,g,b){
+  constructor(r,g,b, name){
     this.r = r;
     this.g = g;
     this.b = b;
+    this.name = name;
+  }
+}
+
+const color2 = new Color(244, 63, 89, "Tomato");
+
+if you look at it in the console you will see a new object with all of these properties. 
+
+-If you want to add a method...do this:
+
+class Color { <-- again we capitalize
+  constructor(r,g,b, name){
+    this.r = r;
+    this.g = g;
+    this.b = b;
+    this.name = name;
+  }
+  greet(){
+    return `Hello from ${this.name}`
   }
 }
 
