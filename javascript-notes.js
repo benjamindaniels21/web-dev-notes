@@ -2252,10 +2252,20 @@ class Color { <-- again we capitalize
 }
 
 -When we make a class we always use a constructor function that will run when we create a new class
-
+-You have to use the 'new' keyword, just like with constructor functions!
 
 const color1 = new Color(244, 233, 21)
-  
+
+class Color { <-- again we capitalize
+  constructor(r,g,b){
+    this.r = r;
+    this.g = g;
+    this.b = b;
+  }
+}
+
+
+
 
 *********************
 ---- -----
