@@ -2213,6 +2213,8 @@ starWarsPerson(); <---we have to call the function
 
 -Primitive data types (strings, booleans, etc) also have prototype methods 
 
+-If you define methods on the prototype they will be shared among objects...so if you add a method and check for strict equality they will return 'true' because they're on the prototype instead of the individual objects themselves.
+
 
 *****************
 -- new keyword --
