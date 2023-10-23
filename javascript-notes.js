@@ -2239,8 +2239,27 @@ function Color(r,g,b) {
 
 -IF we don't use "new" then 'this' will not refer to the object, but to the window object
 
+****************
+-- JS Classes--
+****************
+-This is an easier way to write methods on the prototype separately from the constructor function 
+
+class Color { <-- again we capitalize
+  constructor(r,g,b){
+    console.log("inside constructor")
+    console.log(r,g,b)
+  }
+}
+
+-When we make a class we always use a constructor function that will run when we create a new class
 
 
+const color1 = new Color(244, 233, 21)
+  
+
+*********************
+---- -----
+*********************
 --bump
 
  */
