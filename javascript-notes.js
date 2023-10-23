@@ -2219,6 +2219,24 @@ starWarsPerson(); <---we have to call the function
 *****************
 -new is an 'operator'
 
+***************************
+-- constructor function --
+***************************
+
+-the constructor is a function that creates objects
+-We use an uppercase letter to denote a constructor 
+
+function Color(r,g,b) {
+  this.r = r;
+  this.g = g;
+  this.b = b;
+}
+
+-We don't just use the previous function alone when we're using a constructor...we use it in conjunction with the "new" keyword
+  -What that does is creates a blank js object, links this object to another object, returns the newly created object from step 1 as the 'this' context, returns 'this' if the function doesn't return its own object. 
+
+-IF we don't use "new" then 'this' will not refer to the object, but to the window object
+
 
 
 --bump
