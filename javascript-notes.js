@@ -2208,9 +2208,16 @@ starWarsPerson(); <---we have to call the function
 
 -we can see __proto__ under the array or object when we inspect it we can see it has all of the built in methods there. 
 
+-We can see the proto on the body of a webpage 
+  -It has a bunch of methods and properties 
+
+-Primitive data types (strings, booleans, etc) also have prototype methods 
 
 
-
+*****************
+-- new keyword --
+*****************
+-new is an 'operator'
 
 
 
