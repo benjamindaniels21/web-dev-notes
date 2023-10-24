@@ -2283,6 +2283,8 @@ class Color { <-- again we capitalize
   }
 }
 
+-This will add the method onto the prototype!!
+
 
 
 
