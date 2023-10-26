@@ -2288,9 +2288,9 @@ class Color { <-- again we capitalize
 
 
 
-*********************
-----Super keyword -----
-*********************
+**********************************************
+----Classes, inheritance, Super keyword -----
+**********************************************
 
 -Let's say we make a class of Cat
 
@@ -2370,6 +2370,27 @@ class Dog extends Pet{
 
 
 so if we call the .eat() method on an object made with the dog class it will return the eat method from the dog class and not the pet class. 
+
+If we want to add a constructor into our classes and pull data over from our parent class we can use the "super" keyword
+
+
+
+class Cat extends Pet{
+  constructor(name, age, livesLeft = 9){
+    super(name, age); <--- this will look at the Pet class and pull those values in.
+    this.livesLeft = livesLeft;
+  }
+  meow(){
+    return "meow"
+  }
+  eat(){
+    return "The dog scarfs its food"
+  }
+}
+
+
+
+
 
 
 --bump
