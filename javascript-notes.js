@@ -2412,7 +2412,10 @@ path: where something exists on a computer directory
 relative path: the path to a location relative to where you are currently in the file structure like this  ../../Pets
 
 absolute path: gives the exact path to a location...can be accessed from anywhere on the computer...it will start with a / 
+  /Users/BenDaniels/Documents/WebDevelopment
 
+
+-in the terminal if you type "man" followed by a command you'll get a manual for that particular command
 
 
 
