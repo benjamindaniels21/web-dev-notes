@@ -2289,8 +2289,50 @@ class Color { <-- again we capitalize
 
 
 *********************
----- -----
+----Super keyword -----
 *********************
+
+-Let's say we make a class of Cat
+
+class Cat {
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+  }
+  eat(){
+    return `${this.name} is eating!`;
+  }
+  meow(){
+    return 'meeeeeow'
+  }
+}
+
+we can make a new cat object...
+
+const chucky = new Cat(chucky, 1)
+
+and we had a Dog class
+
+class Dog {
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+  }
+  eat(){
+    return `${this.name} is eating!`;
+  }
+  bark(){
+    return 'woooooof'
+  }
+}
+
+
+
+
+
+
+
+
 --bump
 
  */
