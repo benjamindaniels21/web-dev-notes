@@ -2435,6 +2435,55 @@ rm -rf --removes directory even if it has stuff in it
 -process.argv will return an array that has several items, the first is the absolute path to the node process that was initiated, the second item is the path to the file that's running, and any command-line arguments provided when the process was initiated. 
 
 
+-FS -- stands for "file system"
+
+
+
+
+*****************************
+-----  Module.exports -----
+*****************************
+
+-this allows us to share code between files using javascript. 
+
+If we have some math operations like this in a file called math.js:
+
+const add = (x, y) => x + y;
+const square = x => x * x; 
+
+and we wanted to share them with another file we can use this: 
+
+module.exports.add = add;
+module.exports.square = square;
+
+now in another file we can require math in like this: 
+
+const math = require('./math')
+
+console.log(math.add(2, 4));
+console.log(math.square(4));
+
+...we could also destructure it like this 
+
+const {add, square} = require('./math');
+
+
+
+***************
+-----   -----
+***************
+
+***************
+-----   -----
+***************
+
+***************
+-----   -----
+***************
+
+***************
+-----   -----
+***************
 
 ***************
 -----   -----
