@@ -2401,6 +2401,18 @@ class Cat extends Pet{
 
 -touch--create a file
 
+terminal: text based interface to computer
+shell: program running on the terminal 
+bash: popular shell (bash)
+zshell: popular shell (zsh)
+  -newer than bash 
+
+path: where something exists on a computer directory 
+
+relative path: the path to a location relative to where you are currently in the file structure like this  ../../Pets
+
+absolute path: gives the exact path to a location...can be accessed from anywhere on the computer...it will start with a / 
+
 
 
 
