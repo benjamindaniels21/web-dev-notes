@@ -2417,7 +2417,9 @@ absolute path: gives the exact path to a location...can be accessed from anywher
 
 -in the terminal if you type "man" followed by a command you'll get a manual for that particular command
 
-
+rm -- removes a file...permanently! 
+rmdir -- removes empty directory 
+rm -rf --removes directory even if it has stuff in it
 
 
 
