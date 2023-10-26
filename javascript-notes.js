@@ -2426,9 +2426,13 @@ rm -rf --removes directory even if it has stuff in it
 
 
 
+*******************
+----- Node  -----
+*******************
 
-
-
+-you can type process and see a giant object that has tons of methods 
+-the process object 
+-process.argv will return an array that has several items, the first is the absolute path to the node process that was initiated, the second item is the path to the file that's running, and any command-line arguments provided when the process was initiated. 
 
 
 
