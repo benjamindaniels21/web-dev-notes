@@ -2393,6 +2393,14 @@ class Cat extends Pet{
 --terminal--
 **************
 
+-PWD--print working directory...where are we in the file system?
+
+-LS--list files in the current directory 
+
+-Mkdir--make a directory
+
+-touch--create a file
+
 
 
 
