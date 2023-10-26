@@ -2327,10 +2327,49 @@ class Dog {
 }
 
 
+We have a lot in common here so we can pare it down by adding an Pet class and keeping the common elements together...
+
+class Pet {
+  constructor (name, age){
+    this.name = name;
+    this.age = age;
+  }
+  eat(){
+    return `${this.name} is eating!`;
+  }
+}
+
+class Dog extends Pet{
+  bark(){
+    return "wooof"
+  }
+}
+
+class Cat extends Pet{
+  meow(){
+    return "meeeeeow"
+  }
+}
+
+The cat and dog classes now work (without a constructor function) because they
+extend the Pet class. 
+
+You can also make methods on the dog or cat classes that will overwrite the ones on the parent class. 
 
 
+so we can say 
+
+class Dog extends Pet{
+  bark(){
+    return "wooof"
+  }
+  eat(){
+    return "The dog scarfs its food"
+  }
+}
 
 
+so if we call the .eat() method on an object made with the dog class it will return the eat method from the dog class and not the pet class. 
 
 
 --bump
