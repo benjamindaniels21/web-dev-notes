@@ -2467,7 +2467,11 @@ console.log(math.square(4));
 
 const {add, square} = require('./math');
 
+There are several other ways to do this...
+just use "exports";
 
+
+exports.square = square; <-- does the same thing
 
 ***************
 -----   -----
