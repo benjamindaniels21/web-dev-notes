@@ -2495,9 +2495,16 @@ if you want to require an entire directory you just require it and use the file 
   -PUT: replace all representations of the target resource
   -DELETE: deletes a specific resource
 
+-HTML forms cannot send a Patch...you can only GET or POST
+
 ****************************************************
------   -----
+-----  Express.js  -----
 ***************************************************
+-When you have an app.use() in express it applies to everything. 
+
+
+
+
 ****************************************************
 -----   -----
 ***************************************************
