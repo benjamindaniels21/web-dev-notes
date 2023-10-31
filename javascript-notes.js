@@ -2479,12 +2479,22 @@ exports.square = square; <-- does the same thing
 if you want to require an entire directory you just require it and use the file path. 
   const animalShelter = require('./shelterAnimals')
 
-
-
-
 ****************************************************
------   -----
+----- REST  -----
 ***************************************************
+
+-Stands for REpresentational State Transfer
+-It's a architectural style for providing standards between computers that makes it easier for them to communicate
+-Some of these standards include: 
+  -Separation between client and server: the client and server can be implemented separately.
+  -Stateless: The server doesn't need to know anything about the client's state or vice versa 
+
+-Each of our HTTP methods should match what it says it does...
+  -Get: request a resource 
+  -POST: submit an entry to a resource
+  -PUT: replace all representations of the target resource
+  -DELETE: deletes a specific resource
+
 ****************************************************
 -----   -----
 ***************************************************
