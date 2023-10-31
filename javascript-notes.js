@@ -2501,7 +2501,8 @@ if you want to require an entire directory you just require it and use the file 
 -----  Express.js  -----
 ***************************************************
 -When you have an app.use() in express it applies to everything. 
-
+-When you request anything other than GET you should redirect the user
+so they're not getting stuck in a POST, PATCH, or DELETE request
 
 
 
