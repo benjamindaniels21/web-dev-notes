@@ -2507,8 +2507,16 @@ so they're not getting stuck in a POST, PATCH, or DELETE request
 
 
 ****************************************************
------   -----
-***************************************************
+----- Why use a database?  -----
+****************************************************
+
+-this allows us to have data that persists. 
+-Makes data more manageable. 
+-Provide easy tools for sorting, finding, querying data
+-generally scale well. 
+
+
+
 ****************************************************
 -----   -----
 ***************************************************
