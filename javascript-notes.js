@@ -2514,7 +2514,22 @@ so they're not getting stuck in a POST, PATCH, or DELETE request
 -Makes data more manageable. 
 -Provide easy tools for sorting, finding, querying data
 -generally scale well. 
+-SQL vs NOSQL
 
+-SQL we predefine a schema of tables 
+  -Everything conforms to a pattern 
+  -Think of an excel spreadsheet 
+
+  -We define individual tables like "posts" or "comments"
+    -We'd create a column that references another table...so they're related to one another
+
+-NOSQL can be different types of data schema 
+  -Document
+  -Graph
+  -Key value 
+
+-The common trait is they don't use tables 
+-Mongo is a document based database 
 
 
 ****************************************************
