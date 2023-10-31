@@ -2530,6 +2530,9 @@ so they're not getting stuck in a POST, PATCH, or DELETE request
 
 -The common trait is they don't use tables 
 -Mongo is a document based database 
+  -There is more flexibility because there isn't a predefined schema.
+    -The documents can contain the same or totally different fields
+
 
 
 ****************************************************
