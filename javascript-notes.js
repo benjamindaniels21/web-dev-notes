@@ -2536,8 +2536,15 @@ so they're not getting stuck in a POST, PATCH, or DELETE request
 
 
 ****************************************************
------   -----
-***************************************************
+----- Mongo DB  -----
+****************************************************
+
+-Data is stored in BSON...which is similar to JSON, but much smaller 
+and has more data types 
+  -Date, for example, isn't allowed in JSON, but is very useful in a DB
+
+-
+
 ****************************************************
 -----   -----
 ***************************************************
