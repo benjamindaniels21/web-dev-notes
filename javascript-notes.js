@@ -2550,6 +2550,9 @@ INSERT:
   -We use insert by using the .insertOne() method and passing in an object with the properties we want to include for that individual document
     -db.dogs.insertOne({name: "Charlie", breed: "Corgi", age: 3})  <--- like this
       -If there isn't a dogs collection already, it will be created. 
+    -When you create an entry into a collection, that entry will get an objectId, which will be unique.
+      -You can create your own objectId, but if you don't it'll be created for you. 
+  -Inserting multiple: you can just use .insertMany() 
 
 READ:
 
