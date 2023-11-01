@@ -2577,10 +2577,27 @@ UPDATE:
           -This will replace the name of whatever matched age:4 first
         -You can also use this to ADD a property to a document! 
     -.updateMany() will do the same thing, but to multiple documents. 
+  
+  -We can use multiple operators when we're updating! 
 
   -When we update successfully it will also show us how many documents that we're altered. 
 
+-Other operators aside from $set:
+  -$currentDate
+
+REPLACE:
+-Replace will keep the id the same, but it will overwrite everything in that document. 
+
+
 DELETE: 
+-To delete we use .deleteOne({properties to match})
+
+-.deleteMany({properties}) will find all matches and delete them
+  -If you pass in an empty object it will delete EVERYTHING 
+
+
+
+
 
 ****************************************************
 -----   -----
