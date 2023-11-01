@@ -2555,6 +2555,12 @@ INSERT:
   -Inserting multiple: you can just use .insertMany() 
 
 READ:
+  -If we want all docs in a collection we use .find()
+    -This gives us everything, which is nice, but not common
+  -If we pass in an object with some properties that we want to look for it will return all the matches.
+    -.find({breed: "Corgi"}) <--- case sensitive 
+  -So .find({properties}) will show one or more 
+  -There's also a .findOne()...this will find the first entry in the collection that matches.
 
 UPDATE: 
 
