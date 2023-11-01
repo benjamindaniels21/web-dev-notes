@@ -2648,8 +2648,31 @@ schema.
   });
 
 
+-In mongoose we create "models"
+  -these are JS classes that have predefined methods that we can use 
 
+-First we define a schema 
+  -This is a mapping of collection and defines the shape of the docs in that collection
+  -We can define what data types should be used and what the collection should look like
+    -Let's say we have a db of movies where we want each movie to look like this:
+      {
+        title: "Amadeus",
+        year: 1986,
+        score: 9.2,
+        rating: "R"
+      }
+    -Our schema might look something like this: 
+    
+  const movieSchema = new mongoose.Schema({
+        title: String,
+        year: Number,
+        score, Number,
+        rating: String
+      }
+    );
 
+mongoose.model("Movie", movieSchema);
+      --> this will make a collection called "movies"...lower cased and pluralized 
 
 
 
