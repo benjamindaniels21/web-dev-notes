@@ -2575,7 +2575,10 @@ UPDATE:
       -We use $set to set some properties on the object and then pass the values that we want to overwrite
       .updateOne({age: 4}, $set {name: "Tommy"})
           -This will replace the name of whatever matched age:4 first
-      
+        -You can also use this to ADD a property to a document! 
+    -.updateMany() will do the same thing, but to multiple documents. 
+
+  -When we update successfully it will also show us how many documents that we're altered. 
 
 DELETE: 
 
