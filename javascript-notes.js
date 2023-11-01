@@ -2543,7 +2543,19 @@ so they're not getting stuck in a POST, PATCH, or DELETE request
 and has more data types 
   -Date, for example, isn't allowed in JSON, but is very useful in a DB
 
--
+INSERT:
+  -When we insert, we will insert into a "collection".
+    -If we had an animal shelter database, we could create a collection called "dogs".
+  -If we insert to a collection that doesn't exist, the collection will be created automatically
+  -We use insert by using the .insertOne() method and passing in an object with the properties we want to include for that individual document
+    -db.dogs.insertOne({name: "Charlie", breed: "Corgi", age: 3})  <--- like this
+      -If there isn't a dogs collection already, it will be created. 
+
+READ:
+
+UPDATE: 
+
+DELETE: 
 
 ****************************************************
 -----   -----
