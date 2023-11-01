@@ -2596,6 +2596,22 @@ DELETE:
   -If you pass in an empty object it will delete EVERYTHING 
 
 
+More general Queries:
+-What if we want to find documents where the values are within a range? 
+  -Like if we want to find people age 10-15 years? 
+
+-If we want to access nested properties: 
+  {name: "Charlie", age: 4, personalityTraits: {isCatFriendly: true, isChildFriendly: true}}
+
+  -If we want to search to see if a dog is child friendly we have to look inside personality traits first!
+    -We do that, like this:
+      -db.dogs.find({'personalityTraits.isChildFriendly': true})
+        -It's like accessing properties on an object...isChildFriendly is a property of personalityTraits
+    
+
+
+
+
 
 
 
