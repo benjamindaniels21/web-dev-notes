@@ -2564,10 +2564,18 @@ READ:
   -You can also pass in multiple values...
       -db.dogs.find({isCatFriendly: true, age: 7})
         -This finds all cat friendly dogs that are also 7 years old.
-        
+
 UPDATE: 
+-When we update we need to first FIND the thing we're updating and then update it! 
+  -the .updateOne() takes two arguments.
+    -The first takes some properties that will match our target document. 
+      - .updateOne({name: "Billy"}, )
 
-
+    -The second argument will make the changes
+      -We use $set to set some properties on the object and then pass the values that we want to overwrite
+      .updateOne({age: 4}, $set {name: "Tommy"})
+          -This will replace the name of whatever matched age:4 first
+      
 
 DELETE: 
 
