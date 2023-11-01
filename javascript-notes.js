@@ -2608,6 +2608,44 @@ More general Queries:
       -db.dogs.find({'personalityTraits.isChildFriendly': true})
         -It's like accessing properties on an object...isChildFriendly is a property of personalityTraits
     
+-query operators
+  comparison: 
+    $gt : greater than
+    $lt: less than
+    $gte: greater than or equal
+    $lte: less than or equal 
+    $ne: not equal
+    $eq: equal
+
+  Example: 
+    -db.dogs.find({age: {$gt: 5}})
+
+
+
+****************************************************
+----- Mongoose  -----
+****************************************************
+-This is a way for us to interact with a Mongo database
+-It's an ODM : Object Data Mapper
+-Driver that connects to mongo and provides ways to model application data and define
+schema.
+  -Makes building complex queries in JS easier. 
+
+-to begin we add the mongoose package and require it in
+  const mongoose = require("mongoose")
+
+-we connect by using mongoose.connect() and passing in the default port.
+-We add a .then and .catch to handle connection and errors.
+  -Like this: 
+  mongoose
+  .connect("mongodb://127.0.0.1:27017/movieApp")
+  .then(() => {
+    console.log("connected!!");
+  })
+  .catch((err) => {
+    console.log("error!!");
+    console.log(err);
+  });
 
 
 
@@ -2615,6 +2653,36 @@ More general Queries:
 
 
 
+****************************************************
+-----   -----
+****************************************************
+****************************************************
+-----   -----
+****************************************************
+****************************************************
+-----   -----
+****************************************************
+****************************************************
+-----   -----
+****************************************************
+****************************************************
+-----   -----
+***************************************************
+****************************************************
+-----   -----
+***************************************************
+****************************************************
+-----   -----
+***************************************************
+****************************************************
+-----   -----
+***************************************************
+****************************************************
+-----   -----
+***************************************************
+****************************************************
+-----   -----
+***************************************************
 ****************************************************
 -----   -----
 ***************************************************
