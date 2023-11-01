@@ -2561,8 +2561,13 @@ READ:
     -.find({breed: "Corgi"}) <--- case sensitive 
   -So .find({properties}) will show one or more 
   -There's also a .findOne()...this will find the first entry in the collection that matches.
-
+  -You can also pass in multiple values...
+      -db.dogs.find({isCatFriendly: true, age: 7})
+        -This finds all cat friendly dogs that are also 7 years old.
+        
 UPDATE: 
+
+
 
 DELETE: 
 
