@@ -2721,6 +2721,43 @@ This will allow us to create new documents...like this
   -findOneAndDelete({title: "Alien"})
   
 
+-SCHEMA 
+  -We can give mongoose lots of info about each of our schema properties. 
+
+      We could do this: 
+
+        const productSchema = new mongoose.Schema({
+          name: String,
+          price: Number
+        })
+
+      But we could do it this way also, which allows for more info 
+
+      const productSchema = new mongoose.Schema({
+        name: {
+          type: String,
+          required: true
+        },
+        price: {
+          type: Number,
+        }
+      })
+
+  -the "required" property will make that a requirement for making a new document
+  
+  const bike = new Product({ price: 599});
+  bike.save()
+      .then(data => {
+        console.log("it worked");
+        console.log(data)
+      })
+      .catch(err => {
+        console.log("error!");
+        console.log(err);
+      })
+
+      -This will throw an error because we didn't include a name! 
+  
 
 ****************************************************
 -----   -----
