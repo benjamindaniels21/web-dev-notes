@@ -2674,6 +2674,18 @@ schema.
 mongoose.model("Movie", movieSchema);
       --> this will make a collection called "movies"...lower cased and pluralized 
 
+we save this to a variable: 
+
+const Movie = mongoose.model("Movie", movieSchema);
+
+This will allow us to create new documents...like this 
+      const amadeus = new Movie({
+        title: "Amadeus",
+        year: 1986,
+        score: 9.2,
+        rating: "R",
+      });
+
 
 
 ****************************************************
