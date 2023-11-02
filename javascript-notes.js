@@ -2702,6 +2702,24 @@ This will allow us to create new documents...like this
 
   -findById('id') will find any doc where the id matches the param
 
+-UPDATING in mongoose 
+  -when we update something, it doesn't show us the updated data...it'll just show us that it WAS updated
+
+  -.updateOne() will update the first match
+      -in mongoose we don't have to use the $set 
+  -updateMany() will update more than one document
+      ex: 
+      Movie.updateMany({title: {$in: ['Amadeus', "Stand By Me"]}, {score: 10}).then(data => console.log(data))
+  -There are many updating methods
+
+  -.findOneAndUpdate({title: "The Iron Giant"}, {score:7.0}).then(m => console.log(m))
+
+-DELETING in mongoose 
+  -deleteOne({title: "Amelie"})
+  -deleteMany({year: {$gte: 1999}})
+      -deletes everything that matches params
+  -findOneAndDelete({title: "Alien"})
+  
 
 
 ****************************************************
