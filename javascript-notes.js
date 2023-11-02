@@ -2696,8 +2696,12 @@ This will allow us to create new documents...like this
   -Queries aren't really promises, but we can treat them in a similar way as we would a promise. 
 
   -we can use the .find() method, just like in mongo..
-      -We can pass in params to the method to narrow down our searches
-  
+      -We can pass in params to the method to narrow down our searches  
+
+  -findOne() will find the first match to the query params
+
+  -findById('id') will find any doc where the id matches the param
+
 
 
 ****************************************************
