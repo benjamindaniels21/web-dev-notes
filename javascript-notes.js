@@ -2686,6 +2686,11 @@ This will allow us to create new documents...like this
         rating: "R",
       });
 
+-When we insert a single document we need to call the .save() method...
+ However, if we want to add multiple documents we use the .insertMany([{title: "Scream", year: 2001}, {title: "Scream 2", year: 2002}])
+
+  -This will return a promise and it doesn't need a .save() to create the docs to the database
+      
 
 
 ****************************************************
