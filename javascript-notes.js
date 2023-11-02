@@ -2760,8 +2760,33 @@ This will allow us to create new documents...like this
   
 
 ****************************************************
------   -----
+-----  ZTM Algo Class -----
 ****************************************************
+ARRAYS
+  -In JS arrays are dynamic: they expand as items are added
+      -static arrays have a fixed number of elements
+  -Building an array from scratch...
+      class MyArray {
+        constructor(){
+          this.length = 0;
+          this.data = {}
+        }
+        get(index){
+          return this.data[index]
+        }
+        push(item){
+          this.data[this.length] = item;
+          this.length++;
+          return this.length
+        }
+        pop(){
+          const lastItem = this.data[this.length - 1]
+          delete this.data[this.length-1];
+          this.length--;
+          return lastItem;
+        }
+      }
+
 ****************************************************
 -----   -----
 ****************************************************
