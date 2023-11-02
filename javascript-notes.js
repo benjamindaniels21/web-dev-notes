@@ -2690,7 +2690,14 @@ This will allow us to create new documents...like this
  However, if we want to add multiple documents we use the .insertMany([{title: "Scream", year: 2001}, {title: "Scream 2", year: 2002}])
 
   -This will return a promise and it doesn't need a .save() to create the docs to the database
-      
+
+-FINDING in mongoose
+  -we may have to wait for mongo in order to find something. 
+  -Queries aren't really promises, but we can treat them in a similar way as we would a promise. 
+
+  -we can use the .find() method, just like in mongo..
+      -We can pass in params to the method to narrow down our searches
+  
 
 
 ****************************************************
