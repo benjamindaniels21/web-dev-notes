@@ -2798,9 +2798,33 @@ This will allow us to create new documents...like this
       categories: ['cycling', "safety", "sporting goods"]  <--- This property now has an array of values
     })  
 
+-If we need to have nested properties...like if we had a store and we wanted to see the quantity of an item online versus in the store: 
+    const productSchema = new mongoose.Schema({
+        name: {
+          type: String,
+          required: true,
+          maxlength: 20 
+        },
+        price: {
+          type: Number,
+          default: false  
+          min: 0 
+        },
+        qty: {        <--- Here we set up an object where the property has sub-properties
+          online: {
+            type: Number,
+            default: 0
+          },
+          inStore: {
+            type: Number, 
+            default: 0
+          }
+        }
+      })
 
 
 
+      
 ****************************************************
 -----  ZTM Algo Class -----
 ****************************************************
