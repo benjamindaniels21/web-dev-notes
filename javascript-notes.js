@@ -2758,6 +2758,48 @@ This will allow us to create new documents...like this
 
       -This will throw an error because we didn't include a name! 
   
+-Adding default values
+       const productSchema = new mongoose.Schema({
+        name: {
+          type: String,
+          required: true
+        },
+        price: {
+          type: Number,
+          default: false   <--- setting this to default to false
+        }
+      })
+
+-We can add so many methods to make our lives easier: 
+      -minlength
+      -maxlength
+      -uppercase
+      -lowercase
+      -trim 
+
+ -An example using maxlength:
+       const productSchema = new mongoose.Schema({
+        name: {
+          type: String,
+          required: true,
+          maxlength: 20 <--- we're only allowing the name to be 20 characters 
+        },
+        price: {
+          type: Number,
+          default: false  
+          min: 0 <--- only positive values will be allowed
+        }
+      })
+
+-We can also make some property an array of values...
+    const bike = new Product({
+      name: "Bike Helmet", 
+      price: 199.99,
+      categories: ['cycling', "safety", "sporting goods"]  <--- This property now has an array of values
+    })  
+
+
+
 
 ****************************************************
 -----  ZTM Algo Class -----
@@ -2786,6 +2828,7 @@ ARRAYS
           return lastItem;
         }
       }
+
 
 ****************************************************
 -----   -----
