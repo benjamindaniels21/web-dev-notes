@@ -2875,8 +2875,17 @@ Mongoose VIRTUALS:
       const Person = mongoose.model("Person", personSchema);
 
 
-      
+
 bumps
+
+****************************************************
+----- Mongoose Middleware  -----
+****************************************************
+-Middleware is software that provides services to other software applications
+-mongoose gives us the .pre and .post middlewares to do things before or after something happens. 
+    -For example, we might want something to happen after we save, so we can use the .post to make that happen
+
+
 
 ****************************************************
 -----  ZTM Algo Class -----
@@ -2907,9 +2916,9 @@ ARRAYS
       }
 
 
-****************************************************
------   -----
-****************************************************
+
+
+
 ****************************************************
 -----   -----
 ****************************************************
