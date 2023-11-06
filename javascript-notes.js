@@ -2823,6 +2823,10 @@ This will allow us to create new documents...like this
       })
 
 
+If we replace a value that has validation from the initialization, that value will not get rechecked to see if it conforms to our validation, unless we tell it to recheck it.
+    -To do this we need to use the runValidators: true when we update the item. 
+
+
 bumps
 
 ****************************************************
