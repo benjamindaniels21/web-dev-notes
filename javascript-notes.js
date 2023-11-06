@@ -2855,6 +2855,12 @@ STATIC METHODS
   -This is a way of updating everything. 
   -We use this when we want to update everything, adding a method to all instances. 
 
+
+Mongoose VIRTUALS:
+  -add properties to a schema that don't exist in db 
+    -We might have a db where each user has a first name and last name
+    -In the schema we might want to have access to a "fullName" property without adding it to the database
+
 bumps
 
 ****************************************************
