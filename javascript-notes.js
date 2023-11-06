@@ -2841,6 +2841,13 @@ to create a custom validation message we can add it into our schema like this:
         }
       })
 
+ADDING METHODS to instance: 
+
+-We have built in methods like findOne(), updateMany(), etc.
+  -we can define our own built in methods 
+      productSchema.methods.greet = function() { <---use a reg function expression not an arrow.
+        console.log("Hello!")
+      }
 
 
 bumps
