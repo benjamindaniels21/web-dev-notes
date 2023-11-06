@@ -2850,6 +2850,11 @@ ADDING METHODS to instance:
       }
 
 
+STATIC METHODS
+  -This lives on the model, not the individual instance 
+  -This is a way of updating everything. 
+  -We use this when we want to update everything, adding a method to all instances. 
+
 bumps
 
 ****************************************************
