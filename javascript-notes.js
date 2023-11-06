@@ -2776,6 +2776,9 @@ This will allow us to create new documents...like this
       -uppercase
       -lowercase
       -trim 
+      -enum: this one will see if the created document field conforms to an array of values that we define as allowable:
+          -For example, if we had a shirt that only came in "S", "M", or "L"
+            -We can make sure that the created doc only allows for those values
 
  -An example using maxlength:
        const productSchema = new mongoose.Schema({
@@ -2825,6 +2828,19 @@ This will allow us to create new documents...like this
 
 If we replace a value that has validation from the initialization, that value will not get rechecked to see if it conforms to our validation, unless we tell it to recheck it.
     -To do this we need to use the runValidators: true when we update the item. 
+
+CUSTOM VALIDATION MESSAGES: 
+
+to create a custom validation message we can add it into our schema like this: 
+
+      const product = new mongoose.Schema({
+        price: {
+          type: Number,
+          default: false, 
+          min: [0, "Price must be a positive number."] <--- here
+        }
+      })
+
 
 
 bumps
