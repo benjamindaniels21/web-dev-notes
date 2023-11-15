@@ -2929,7 +2929,7 @@ ARRAYS
 
 -middleware have access to request and response objects.
 
--Some middleware come built in like 
+-Some middleware come built in like route handlers
 
 
 
