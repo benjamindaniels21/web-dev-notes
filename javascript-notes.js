@@ -2919,7 +2919,17 @@ ARRAYS
 ****************************************************
 -----Express Middleware  -----
 ****************************************************
--
+-in express middleware is just a function that runs between the request and response
+
+-REQ --->  MIDDLEWARE ---> RESPONSE
+
+-They can be standalone functions or they can be strung together in order to do more complex things
+
+-Express in and of itself is not very functional (as the docs say explicitly), but the middleware is what make it powerful
+
+-middleware have access to request and response objects.
+
+-Some middleware come built in like 
 
 
 
