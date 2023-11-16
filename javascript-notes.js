@@ -2931,7 +2931,10 @@ ARRAYS
 
 -Some middleware come built in like route handlers
 
+-To use a middleware you use the app.use("middlewareHERE").
+  -This will use the middleware anytime a request comes in
 
+--Morgan is an example of middleware that will 
 
 
 ****************************************************
