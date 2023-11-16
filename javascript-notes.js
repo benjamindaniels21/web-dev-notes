@@ -2934,7 +2934,10 @@ ARRAYS
 -To use a middleware you use the app.use("middlewareHERE").
   -This will use the middleware anytime a request comes in
 
---Morgan is an example of middleware that will 
+-Morgan is an example of middleware that will log out how long a request took
+
+-We need to tell middleware to go on to the NEXT middleware and chain them together.
+
 
 
 ****************************************************
