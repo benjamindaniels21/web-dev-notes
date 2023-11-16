@@ -2938,6 +2938,35 @@ ARRAYS
 
 -We need to tell middleware to go on to the NEXT middleware and chain them together.
 
+-app.use will run on all requests.
+  -this is called for ALL requests
+  -However, this middleware won't call the next middleware
+
+  app.use((req, res)=> {
+    res.send("Hijacked by my app.use!")
+  })
+
+  -Here every time you send a request you'll get this as a response ^^^
+
+  app.use((req, res, next)=> {
+    console.log("This is middleware");
+    next();
+  })
+
+  if you don't add a next() the whole process will stop...it won't find any endpoints or handle any routes in other app.get() or whatever...it just stops everything
+
+  if you have this
+
+   app.use((req, res, next)=> {
+    console.log("This is middleware");
+  })
+
+  app.get("/dogs", (req, res)=>{
+    res.send("woof")
+  })
+
+  Since we don't have a next() the program will console log "this is middleware", but won't send a response even if you send a get request to '/dogs'
+
 
 
 ****************************************************
