@@ -2974,8 +2974,9 @@ ARRAYS
   -if you want some function to run only on a specific route you can define a function and use it as a callback on the route.
   -Each request type can use callbacks
 
-    const someFunction = () => {
+    const someFunction = (req, res, next) => {
       console.log("A custom middleware")
+      next()
     }
 
     app.get("/bongos", someFunction, (req, res) =>{
