@@ -2970,6 +2970,21 @@ ARRAYS
 -To send a 404 we can just add an app.use() at the very end of the express file, after all of the routes, so that it will run if we don't find any endpoint. 
   you can also add a res.status(404)
 
+-adding middleware to specific routes:
+  -if you want some function to run only on a specific route you can define a function and use it as a callback on the route.
+  -Each request type can use callbacks
+
+    const someFunction = () => {
+      console.log("A custom middleware")
+    }
+
+    app.get("/bongos", someFunction, (req, res) =>{
+      res.send("Bongo!")
+    })
+
+      -Here we will get the console.log() happening because we called it as a callback function in the app.get() request
+
+
 ****************************************************
 -----   -----
 ****************************************************
