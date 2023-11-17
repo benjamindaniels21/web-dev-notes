@@ -2968,6 +2968,7 @@ ARRAYS
   Since we don't have a next() the program will console log "this is middleware", but won't send a response even if you send a get request to '/dogs'
 
 -To send a 404 we can just add an app.use() at the very end of the express file, after all of the routes, so that it will run if we don't find any endpoint. 
+  you can also add a res.status(404)
 
 ****************************************************
 -----   -----
