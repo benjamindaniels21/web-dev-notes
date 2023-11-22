@@ -3021,6 +3021,23 @@ ARRAYS
 Async Error Handling:
  when we handle errors in an async function we need to make sure to pass the error into the next function and since we're async we can do this inside of a try/catch block 
 
+Another way to work with async errors is to create a wrapper function that will take all of the async function in as an argument and then return a function with a .catch attached. This eliminates the need for try/catch in every route
+
+        function wrapAsync(fn){
+          return function (req, res, next){
+            fn(req, res, next).catch(err=> next(err));
+          }
+        }
+
+        app.get('/products', wrapAsync(async(req, res, next) =>{
+          const { id } = req.params;
+          const product = await Product.findById(id);
+          if(!product){
+            throw new Error ("product not found")
+          } 
+          res.render("products/show", {product})
+        }))
+
 ****************************************************
 -----   -----
 ***************************************************
