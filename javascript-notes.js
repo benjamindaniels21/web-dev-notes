@@ -3018,7 +3018,8 @@ ARRAYS
 
           -This will log "error!!" and then log out whatever errors express finds and a stack trace. 
 
-
+Async Error Handling:
+ when we handle errors in an async function we need to make sure to pass the error into the next function and since we're async we can do this inside of a try/catch block 
 
 ****************************************************
 -----   -----
