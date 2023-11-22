@@ -2988,8 +2988,38 @@ ARRAYS
       bump
 
 ****************************************************
------   -----
+----- Express Error Handling  -----
 ****************************************************
+-There are many different types of errors in js 
+  -syntax, incomplete data, connection problems, etc. 
+
+-We want to think about errors that might happen before they pop up 
+  -Like form validation 
+    -what happens if you need a username and password and nothing is entered?
+
+-express has a built in error handler
+  -responds with a status code 500 (generic server side error)
+  -gives a stack trace 
+
+-If you want to write an error handler you use it at the end of all of your app.use() middleware
+
+-Express error handler middlewares will always have four arguments: 
+    app.use((err, req, res, next)=>{
+      console.log("error!!");
+    })
+
+-If you define your own error handling and don't pass in a next()...you will not get any of express' built in handling.
+    -IF you want to use it, you pass the error into the next()
+        
+        app.use((err, req, res, next)=>{
+            console.log("error!!");
+            next(err);
+          })
+
+          -This will log "error!!" and then log out whatever errors express finds and a stack trace. 
+
+
+
 ****************************************************
 -----   -----
 ***************************************************
