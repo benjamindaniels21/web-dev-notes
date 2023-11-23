@@ -3044,21 +3044,33 @@ Another way to work with async errors is to create a wrapper function that will 
 -In many DBs the data is structured in a relational way
   -SQL is relational by nature. 
 
--One to Many relationship 
+-One to Many relationship in SQL
   -when a single entity is associated with a number of other entities 
       -Users to Posts in a reddit app for example
         -Each user (one) can have many posts
 
--Many to Many relationship
+-Many to Many relationship in SQL
   -when multiple records in a table are associated with multiple records in another table 
     -Ex: if we had a movie table and an actor table. Each movie has a cast and each actor also has starred in multiple movies 
 
+-One to Few 
+  -An example would be if a user has some addresses stored for making purchases. It's unlikely a user would have 100 different addresses, so it would be best to keep that data in the same document. 
 
+-One to Many in Mongo
+  -in order to tie two documents together we can use the ObjectID from the document you want to tie to. 
+    -If you had a farm stand that sold different products and you were making an app that showed all the different farm stands in the area and their inventory you might want to have a document that looked like this: 
 
+        {
+          farmName: "Full Belly Farms",
+          location: "Guinda, CA",
+          produce: [
+            ObjectID("24324294u49494494"),
+            ObjectID("4834832tfc2849842"),
+            ObjectID("444443332ff28488582"),
+          ]
+        }
 
-
-
-
+        -Here we're referencing another document to populate our produce array.
 
 
 ****************************************************
