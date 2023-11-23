@@ -3039,8 +3039,28 @@ Another way to work with async errors is to create a wrapper function that will 
         }))
 
 ****************************************************
------   -----
-***************************************************
+----- relationships in Mongo  -----
+****************************************************
+-In many DBs the data is structured in a relational way
+  -SQL is relational by nature. 
+
+-One to Many relationship 
+  -when a single entity is associated with a number of other entities 
+      -Users to Posts in a reddit app for example
+        -Each user (one) can have many posts
+
+-Many to Many relationship
+  -when multiple records in a table are associated with multiple records in another table 
+    -Ex: if we had a movie table and an actor table. Each movie has a cast and each actor also has starred in multiple movies 
+
+
+
+
+
+
+
+
+
 ****************************************************
 -----   -----
 ***************************************************
