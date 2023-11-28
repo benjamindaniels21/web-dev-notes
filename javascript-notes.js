@@ -3074,11 +3074,50 @@ Another way to work with async errors is to create a wrapper function that will 
 
 bump
 ****************************************************
------   -----
-***************************************************
+----- Express Router  -----
 ****************************************************
------   -----
-***************************************************
+-A way to break our routes into separate files 
+-Express router is a mini app
+-You can extract all of the same routes into their own file and export them:
+
+   ---file named shelters.js---
+
+  router.get("/", (req, res) => {
+  res.send("all shelters");
+  });
+
+  router.post("/", (req, res) => {
+    res.send("create a shelter");
+  });
+
+  router.get("/:id", (req, res) => {
+    res.send("view one shelter");
+  });
+
+  router.get("/:id/edit", (req, res) => {
+    res.send("edit one shelter");
+  });
+
+  module.exports = router;
+
+-In our index file if we want to have access to these files we do this: 
+
+    const shelterRouters = require("./routes/shelters");
+
+    app.use("/shelters", shelterRouters);
+
+    This will prepend the "/shelters" to each of the routes in the shelters.js file. 
+
+    
+
+
+
+****************************************************
+-----  Cookies -----
+****************************************************
+-
+
+
 ****************************************************
 -----   -----
 ***************************************************
