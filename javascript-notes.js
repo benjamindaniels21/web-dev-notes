@@ -3108,7 +3108,32 @@ bump
 
     This will prepend the "/shelters" to each of the routes in the shelters.js file. 
 
-    
+-This great because we can change the route names SUPER EASILY by just changing the app.use in our index.
+
+- You can also define middleware in each of the routes files so that it only applies to that particular bunch of routes...VERY USEFUL
+  -Maybe you want an /admin route...
+
+  const express = require("express");
+const router = express.Router();
+
+      router.use((req, res, next) => {
+        // using router will keep all these routes behind this middleware
+        if (req.query.isAdmin) {
+          next();
+        }
+        res.send("Sorry, not an admin!");
+      });
+
+      router.get("/topsecret", (req, res) => {
+        res.send("this is top secret!");
+      });
+
+      router.get("/deleteeverything", (req, res) => {
+        res.send("deleted everything!");
+      });
+
+      module.exports = router;
+
 
 
 
