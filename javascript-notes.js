@@ -3137,7 +3137,20 @@ const router = express.Router();
 ****************************************************
 -----  Cookies -----
 ****************************************************
--
+-it's a little bit of data stored in the browser
+-cookies are a way to remember info about a user and to show relevant content to them over time.
+-without cookies, we couldn't remember info about users...because HTTP is stateless. 
+-every time you make a request, you send over the stored cookies. 
+-This is info that might not yet be stored in a DB, but that we'd want a website to remember, like items in a shopping cart. 
+
+  to set a cookie:
+
+  app.get("/setname", (req, res) => {
+  res.cookie("name", "Bob");
+  res.cookie("animal", "shrimp");
+  res.send("Ok sent you a cookie");
+  });
+
 
 
 ****************************************************
