@@ -3155,7 +3155,8 @@ const router = express.Router();
 
   req.cookies will give us an object with the key/value pairs of the parsed cookies
 
-
+-signed cookies make it so that the cookie remains in tact without any tampering
+-Signing cookies is not about keeping them secret, but about maintaining their integrity
 
 
 ****************************************************
