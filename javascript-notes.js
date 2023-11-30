@@ -3151,6 +3151,11 @@ const router = express.Router();
   res.send("Ok sent you a cookie");
   });
 
+  we can also use cookie parser to parse our cookies on all requests. This allows us to look at info from our cookies...for example:
+
+  req.cookies will give us an object with the key/value pairs of the parsed cookies
+
+
 
 
 ****************************************************
