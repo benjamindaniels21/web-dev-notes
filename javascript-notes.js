@@ -3160,8 +3160,19 @@ const router = express.Router();
 
 
 ****************************************************
------   -----
-***************************************************
+----- HMAC signing  -----
+****************************************************
+-Take a cookie or something that is signed and will encrypt your cookie or whatever you're signing.
+
+-it takes the cookie or whatever and a secret key and uses a hashing algo to encrypt it. 
+
+-Then it checks to see if the hashed value is the same on both ends so the cookie or whatever hasn't been tampered with. 
+
+
+
+
+
+
 ****************************************************
 -----   -----
 ***************************************************
