@@ -3187,14 +3187,18 @@ const router = express.Router();
 -the server gets that session id on every request. 
   -then server can look up that session id in the data store
 
-
-
-
-
+-!!!sessions are not unique to express!!!
 
 ****************************************************
------   -----
+----- Connect Flash  -----
 ****************************************************
+-This is a package 
+-It will flash a message to the user at some point in the session. 
+  -Maybe you want a message for the user when they do something successfully
+
+
+
+
 ****************************************************
 -----   -----
 ****************************************************
