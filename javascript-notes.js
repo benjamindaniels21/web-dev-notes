@@ -3197,14 +3197,53 @@ const router = express.Router();
   -Maybe you want a message for the user when they do something successfully
 
 
+****************************************************
+-----  Authentication -----
+****************************************************
+-authentication vs authorization 
+  -Authentication is verifying you are who you say you are. 
+  -Authorization: what a user is able to do. This happens AFTER you're authenticated 
+    -See if a person is an admin, what privileges does the user have?
+
+****************************************************
+----- Storing Passwords  -----
+****************************************************
+-How do we store passwords?
+  -DO NOT STORE PASSWORDS IN TEXT IN THE DATABASE!
+    -No No No! 
+  -You're screwed if anyone gets access to the db. 
+    -People reuse passwords all the time, so it's a big deal! 
+
+-Instead of storing the password
+  -We hash the password. 
+  -We're storing the hashed version of the password
+
+-What's a hashing function?
+  -A function in general that takes a variable sized input data and it spits out a fixed size output
+    -The ending size is the same no matter if the passwords are different lengths
+
+-How it works in practice:
+  -A user provides a password and its hashed version is stored in the database.
+  -When the user signs in with their password, the given password is hashed and checked against the stored hashed version in the database 
+    -You're comparing hashed to hashed...you never store the actual password...ever! 
+
+-hashing functions cont.
+  -They're a broad group of functions 
+  -not every hash function is suitable for hashing passwords. 
+
+-Cryptographic hash functions 
+  -It's a one way function that cannot be inverted. 
+    -If someone gets access to the DB then it doesn't matter. They can't figure out the input through looking at the hashed password. 
+  -How does a one way function work? 
+    -Absolute value works like this: 
+      -If you pass in a value you'll never know what the input was...there's always two options! 
+        -Super simple example ^^^^ 
+  -
 
 
-****************************************************
------   -----
-****************************************************
-****************************************************
------   -----
-****************************************************
+-Hash tables and hashmaps use hashing functions! 
+
+
 ****************************************************
 -----   -----
 ****************************************************
