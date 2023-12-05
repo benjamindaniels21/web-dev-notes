@@ -3230,6 +3230,7 @@ const router = express.Router();
 -hashing functions cont.
   -They're a broad group of functions 
   -not every hash function is suitable for hashing passwords. 
+  -Hash tables and hashmaps use hashing functions! 
 
 -Cryptographic hash functions 
   -It's a one way function that cannot be inverted. 
@@ -3238,10 +3239,27 @@ const router = express.Router();
     -Absolute value works like this: 
       -If you pass in a value you'll never know what the input was...there's always two options! 
         -Super simple example ^^^^ 
+  -Small changes will result in giant changes in the hashed outputs 
+  -Same input always yields the same output. 
+  -Unlikely to have collisions (when two different inputs produce the same output)
+  -The hash function is deliberately slow.
+    -That way you can't brute force guess a password by guessing millions of different options
+
+-Salts
+  -This is an extra safeguard 
+  -People use the same passwords across their accounts and people use the same passwords ('password', '1234', etc.)
+  -So if we only use a hash function and we run through it the common passwords we could get access to some accounts, especially since so many people use the same passwords 
+
+  Salts are a random value that is attached to your password. It makes your password even more secure. 
+    -This changes the input to the hash which creates a radically different output.
+  -If you hash 'password' you'll get something, but if you salt 'password' with 'dog', so 'passwordDOG' you'll get a massively different hashed value.
+
+  
+-Bcrypt
   -
 
 
--Hash tables and hashmaps use hashing functions! 
+
 
 
 ****************************************************
