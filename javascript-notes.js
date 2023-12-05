@@ -3280,6 +3280,7 @@ const router = express.Router();
 -How do we check to see if our hashed and salted password is the same? 
   -Bcrypt has a method called 'compare' 
 
+-Salts do not have to be secret, they just introduce randomness  
 
 ****************************************************
 -----   -----
