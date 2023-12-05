@@ -3256,7 +3256,10 @@ const router = express.Router();
 
   
 -Bcrypt
-  -
+  -it's used to hash and store passwords
+  -there are implementations of this in several languages
+  -bcrypt.js can be used in the browser or node
+  -the plain bcrypt package only works in node. 
 
 
 
