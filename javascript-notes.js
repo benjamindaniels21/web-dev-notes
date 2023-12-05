@@ -3266,13 +3266,21 @@ const router = express.Router();
       do stuff here
     })
 
-  -saltRounds will help to slow down the process. You pass in a number and it will slow it down. 
+  -saltRounds will help to slow down the process. You pass in a number and it will slow it down. Recommended is 12 
 
-    const hashPassword = async () => {
-      const salt = await bcrypt.genSalt(10);
+    const hashPassword = async (pw) => {
+      const salt = await bcrypt.genSalt(12);
+      const hash = bcrypt.hash(pw, salt);
       console.log(salt)
+      console.log(hash)
     }
 
+    hashPassword();
+
+-How do we check to see if our hashed and salted password is the same? 
+  -Bcrypt has a method called 'compare' 
+
+
 ****************************************************
 -----   -----
 ****************************************************
@@ -3281,7 +3289,7 @@ const router = express.Router();
 ****************************************************
 ****************************************************
 -----   -----
-***************************************************
+****************************************************
 ****************************************************
 -----   -----
 ***************************************************
