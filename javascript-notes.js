@@ -3261,9 +3261,17 @@ const router = express.Router();
   -bcrypt.js can be used in the browser or node
   -the plain bcrypt package only works in node. 
 
+  -bcrypt also can generate salts:
+    bcrypt.genSalt(saltRounds, function(err, salt){
+      do stuff here
+    })
 
+  -saltRounds will help to slow down the process. You pass in a number and it will slow it down. 
 
-
+    const hashPassword = async () => {
+      const salt = await bcrypt.genSalt(10);
+      console.log(salt)
+    }
 
 ****************************************************
 -----   -----
